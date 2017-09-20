@@ -218,3 +218,51 @@ SECTION: SCHENDULE
     padding: 10px 25px;
   }
 }
+
+/* 
+SECTION: GRADES
+*/
+
+.grades {
+  margin: 2em 0;  
+  text-align: center;
+}
+
+.grades__title {
+  letter-spacing: 1px;
+  margin: 1em 0;
+}
+
+.grades__table {
+  margin: auto;
+  font-size: 5.8vw
+}
+
+.grades__th {
+  padding: 5px 0;
+}
+
+.grades__td {
+  font-weight: 300;
+  padding: 5px 10px;
+}
+
+@media (min-width: 768px) {
+  .grades__table {
+    font-size: 2.8vw
+  }
+
+  .grades__td {
+    padding: 10px 55px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grades__table {
+    font-size: 2vw
+  }
+
+  .grades__td {
+    padding: 10px 75px;
+  }
+}
