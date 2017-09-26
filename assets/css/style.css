@@ -279,3 +279,60 @@ SECTION: GRADES
     padding: 10px 75px;
   }
 }
+
+/* 
+SECTION: TASKS
+*/
+
+.tasks {
+  margin: 3em 0;
+  text-align: center;
+}
+
+.tasks__title {
+  margin: 1em 0;
+  
+}
+
+.tasks__table {
+  font-size: 4vw;
+  margin: auto;
+}
+
+.tasks__td {
+  letter-spacing: 2px;
+  padding: 12px 0;
+}
+
+
+@media (min-width: 768px) {
+  .tasks__table {
+    font-size: 2.8vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tasks {
+    display: inline-block;
+    width: 55%;
+    height: 325px;
+    text-align: left;
+  }
+
+  .tasks__title {
+    border-bottom: 1px solid rgba(250,250,250,.1);
+    margin: 10px 28px;
+    padding: 10px 0;
+    width: 90%;
+  }
+
+  .tasks__table {
+    margin: 0 28px;
+    font-size: 2vw;
+    width: 90%;
+  }
+  
+  .tasks__td {
+    padding: 10px 0 10px 10px;
+  }
+}
