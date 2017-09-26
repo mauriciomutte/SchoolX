@@ -235,7 +235,8 @@ SECTION: GRADES
 
 .grades__table {
   margin: auto;
-  font-size: 5.8vw
+  font-size: 5.8vw;
+  border-collapse: collapse;
 }
 
 .grades__th {
@@ -253,6 +254,10 @@ SECTION: GRADES
   padding: 5px 10px;
   text-align: left;
   letter-spacing: 1px;
+}
+
+.grades__tr:hover {
+  background-color: rgba(0,0,0,.2);
 }
 
 @media (min-width: 768px) {

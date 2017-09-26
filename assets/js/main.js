@@ -95,6 +95,7 @@ function gradesTable() {
     const gradesTd = [matter, firstTrimester, secondTrimester, thirdTrimester]
 
     const tr2 = document.createElement('tr')
+    tr2.classList.add('grades__tr')
     tbody.appendChild(tr2)
 
     for (let i = 0; i < gradesTd.length; i++) {
