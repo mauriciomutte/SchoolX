@@ -74,6 +74,27 @@ function scheduleTable() {
 scheduleTable()
 
 //
+// SCHEDULE
+// 
+
+function tasks(date, matter, content){
+  const tbody = document.querySelector('.tasks__tbody')
+
+  const tr = document.createElement('tr')
+  tr.classList.add('tasks__tr')
+  tbody.appendChild(tr)
+
+  const td = document.createElement('td')
+  td.classList.add('tasks__td')
+  td.innerHTML = `${date} - ${matter} - ${content}`
+  tr.appendChild(td)
+}
+
+tasks('29/09','Matemática','Tema: livro 5 pagina 30')
+tasks('29/09','Matemática','Tema: livro 5 pagina 30')
+tasks('29/09','Matemática','Tema: livro 5 pagina 30')
+
+//
 // GRADES
 // 
 
