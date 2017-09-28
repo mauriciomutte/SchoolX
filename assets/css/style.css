@@ -315,8 +315,32 @@ SECTION: TASKS
   .tasks {
     display: inline-block;
     width: 55%;
-    height: 325px;
+    margin: 2em;
     text-align: left;
+  }
+
+  .tasks__container {
+    height: 310px;    
+    overflow-y: scroll;
+    white-space: nowrap;
+    position: absolute;
+  }
+
+  .tasks__container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.1);
+  }
+  
+  .tasks__container::-webkit-scrollbar {
+    width: 9px;
+    background-color: transparent;
+  }
+  
+  .tasks__container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,0.4);
   }
 
   .tasks__title {
