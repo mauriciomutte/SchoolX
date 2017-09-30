@@ -291,11 +291,9 @@ SECTION: TASKS
 
 .tasks__title {
   margin: 1em 0;
-  
 }
 
 .tasks__table {
-  font-size: 4vw;
   margin: auto;
 }
 
@@ -304,10 +302,39 @@ SECTION: TASKS
   padding: 12px 0;
 }
 
+.tasks__td--info {
+  display: inline-block;
+  font-size: 4vw;
+  font-weight: 300;
+}
+
+.tasks__td--info span {
+  font-size: 3.8vw;
+  text-transform: uppercase;
+}
+
+.tasks__td--warning {
+  font-size: 6.5vw;
+}
 
 @media (min-width: 768px) {
-  .tasks__table {
-    font-size: 2.8vw;
+  .tasks__td {
+    padding: 20px 0;
+  }
+
+  .tasks__td--info {
+    display: inline-block;
+    font-size: 2.5vw;
+    font-weight: 300;
+  }
+  
+  .tasks__td--info span {
+    font-size: 2.4vw;
+    text-transform: uppercase;
+  }
+  
+  .tasks__td--warning {
+    font-size: 3.5vw;
   }
 }
 
@@ -324,6 +351,7 @@ SECTION: TASKS
     overflow-y: scroll;
     white-space: nowrap;
     position: absolute;
+    width: 52%
   }
 
   .tasks__container::-webkit-scrollbar-track {
@@ -357,6 +385,21 @@ SECTION: TASKS
   }
   
   .tasks__td {
-    padding: 10px 0 10px 10px;
+    padding: 0 0 20px 10px;
+  }
+
+  .tasks__td--info {
+    display: inline-block;
+    font-size: 1.2vw;
+    font-weight: 300;
+  }
+  
+  .tasks__td--info span {
+    font-size: 1.1vw;
+    text-transform: uppercase;
+  }
+  
+  .tasks__td--warning {
+    font-size: 1.8vw;
   }
 }
