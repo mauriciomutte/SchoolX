@@ -74,7 +74,7 @@ function scheduleTable() {
 scheduleTable()
 
 //
-// SCHEDULE
+// TASKS
 // 
 
 function tasks(date, matter, content){
@@ -86,8 +86,21 @@ function tasks(date, matter, content){
 
   const td = document.createElement('td')
   td.classList.add('tasks__td')
-  td.innerHTML = `${date} - ${matter} - ${content}`
   tr.appendChild(td)
+
+  const tasksInfo = document.createElement('div')
+  tasksInfo.classList.add('tasks__td--info')
+  tasksInfo.innerHTML = `${date} - `
+  td.appendChild(tasksInfo)
+
+  const tasksMatter = document.createElement('span')
+  tasksMatter.innerHTML = `${matter}`
+  tasksInfo.appendChild(tasksMatter)
+
+  const tasksWarning = document.createElement('div')
+  tasksWarning.classList.add('tasks__td--warning')
+  tasksWarning.innerHTML = `${content}`
+  td.appendChild(tasksWarning)
 }
 
 tasks('29/09','Matemática','Tema: livro 5 pagina 30')
