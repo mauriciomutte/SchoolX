@@ -146,7 +146,7 @@ function gradesTable() {
   }
 
   const require = new XMLHttpRequest()
-  require.open('GET', '../notas.json', true)
+  require.open('GET', 'notas.json', true)
   require.onload = function() {
     const nota = JSON.parse(this.responseText)
 
