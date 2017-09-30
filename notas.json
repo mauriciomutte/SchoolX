@@ -1,0 +1,77 @@
+{
+  "fisica": {
+    "first": "10,0",
+    "second": "9,10",
+    "third": "-"
+  },
+  "matematica": {
+    "first": "9,49",
+    "second": "8,75",
+    "third": "-"
+  },
+  "quimica": {
+    "first": "9,61",
+    "second": "8,23",
+    "third": "-"
+  },
+  "biologia": {
+    "first": "8,47",
+    "second": "7,20",
+    "third": "-"
+  },
+  "filosofia": {
+    "first": "10,0",
+    "second": "9,00",
+    "third": "-"
+  },
+  "sociologia": {
+    "first": "10,0",
+    "second": "10,0",
+    "third": "-"
+  },
+  "geografia": {
+    "first": "10,0",
+    "second": "8,80",
+    "third": "-"
+  },
+  "historia": {
+    "first": "9,70",
+    "second": "9,10",
+    "third": "-"
+  },
+  "portugues": {
+    "first": "8,60",
+    "second": "8,00",
+    "third": "-"
+  },
+  "literatura": {
+    "first": "8,30",
+    "second": "7,40",
+    "third": "-"
+  },
+  "redacao": {
+    "first": "8,00",
+    "second": "8,00",
+    "third": "-"
+  },
+  "ingles": {
+    "first": "9,70",
+    "second": "7,90",
+    "third": "-"
+  },
+  "espanhol": {
+    "first": "8,99",
+    "second": "7,00",
+    "third": "-"
+  },
+  "arte": {
+    "first": "8,40",
+    "second": "8,62",
+    "third": "-"
+  },
+  "edf": {
+    "first": "10,0",
+    "second": "9,30",
+    "third": "-"
+  }
+}
