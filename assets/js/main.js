@@ -103,14 +103,13 @@ function tasks(date, matter, content){
   td.appendChild(tasksWarning)
 }
 
-tasks('29/09','Matemática','Tema: livro 5 pagina 30')
-tasks('29/09','Matemática','Tema: livro 5 pagina 30')
-tasks('29/09','Matemática','Tema: livro 5 pagina 30')
-tasks('29/09','Matemática','Tema: livro 5 pagina 30')
-tasks('29/09','Matemática','Tema: livro 5 pagina 30')
-tasks('29/09','Matemática','Tema: livro 5 pagina 30')
-tasks('29/09','Matemática','Tema: livro 5 pagina 30')
-tasks('29/09','Matemática','Tema: livro 5 pagina 30')
+tasks('09/10','Redação','Tema: fazer cronica do livro')
+tasks('11/10','Literatura','Trabalho: análise crítica do livro')
+tasks('17/10','Química','Prova: av1')
+tasks('18/10','Física','Prova: av1')
+tasks('18/10','Literatura','Prova: av1')
+tasks('19/10','Português','Prova: av1')
+tasks('26/10','Histŕoia','Prova: av1')
 
 //
 // GRADES
