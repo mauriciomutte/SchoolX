@@ -147,25 +147,18 @@ function gradesTable() {
   require.onload = function() {
     const nota = JSON.parse(this.responseText)
 
-    gradesMatter('Física', nota.fisica.first, nota.fisica.second, nota.fisica.third)
-    gradesMatter('Matemática', nota.matematica.first, nota.matematica.second, nota.matematica.third)
-    gradesMatter('Química', nota.quimica.first, nota.quimica.second, nota.quimica.third)
-    gradesMatter('Biologia', nota.biologia.first, nota.biologia.second, nota.biologia.third)
-    gradesMatter('Filosofia', nota.filosofia.first, nota.filosofia.second, nota.filosofia.third)
-    gradesMatter('Sociologia', nota.sociologia.first, nota.sociologia.second, nota.sociologia.third)
-    gradesMatter('Geografia', nota.geografia.first, nota.geografia.second, nota.geografia.third)
-    gradesMatter('História', nota.historia.first, nota.historia.second, nota.historia.third)
-    gradesMatter('Português', nota.portugues.first, nota.portugues.second, nota.portugues.third)
-    gradesMatter('Literatura', nota.literatura.first, nota.literatura.second, nota.literatura.third)
-    gradesMatter('Redação', nota.redacao.first, nota.redacao.second, nota.redacao.third)
-    gradesMatter('Inglês', nota.ingles.first, nota.ingles.second, nota.ingles.third)
-    gradesMatter('Espanhol', nota.espanhol.first, nota.espanhol.second, nota.espanhol.third)
-    gradesMatter('Arte', nota.arte.first, nota.arte.second, nota.arte.third)
-    gradesMatter('Ed. Fis', nota.edf.first, nota.edf.second, nota.edf.third)
+    for (let i = 0; i < nota.length; i++) {
+      gradesMatter(nota[i].matter, nota[i].first, nota[i].second, nota[i].third)
+    }
+    console.log('Pontos para passar:')
+    for (let i = 0; i < nota.length; i++) {
+      if (nota[i].third == '-') {
+        nota[i].third = 0
+      }
+      
+      console.log('- ' + nota[i].matter + ": " + Math.round(((Number(nota[i].first) + Number(nota[i].second) + Number(nota[i].third))* -1)+ 21 ) + 'pts')
+    }
   }
   require.send()
-
-  
 }
-
 gradesTable()
