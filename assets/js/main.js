@@ -98,8 +98,12 @@ require.onload = function() {
     td.appendChild(tasksInfo)
   
     const tasksMatter = document.createElement('span')
-    tasksMatter.innerHTML = `${tasks[i].matter}`
+    tasksMatter.innerHTML = `${tasks[i].matter} - `
     tasksInfo.appendChild(tasksMatter)
+
+    const tasksCategory = document.createElement('span')
+    tasksCategory.innerHTML = `${tasks[i].category}`
+    tasksInfo.appendChild(tasksCategory)
   
     const tasksWarning = document.createElement('div')
     tasksWarning.classList.add('tasks__td--warning')
