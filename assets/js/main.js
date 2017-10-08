@@ -77,39 +77,37 @@ scheduleTable()
 // TASKS
 // 
 
-function tasks(date, matter, content){
-  const tbody = document.querySelector('.tasks__tbody')
-
-  const tr = document.createElement('tr')
-  tr.classList.add('tasks__tr')
-  tbody.appendChild(tr)
-
-  const td = document.createElement('td')
-  td.classList.add('tasks__td')
-  tr.appendChild(td)
-
-  const tasksInfo = document.createElement('div')
-  tasksInfo.classList.add('tasks__td--info')
-  tasksInfo.innerHTML = `${date} - `
-  td.appendChild(tasksInfo)
-
-  const tasksMatter = document.createElement('span')
-  tasksMatter.innerHTML = `${matter}`
-  tasksInfo.appendChild(tasksMatter)
-
-  const tasksWarning = document.createElement('div')
-  tasksWarning.classList.add('tasks__td--warning')
-  tasksWarning.innerHTML = `${content}`
-  td.appendChild(tasksWarning)
+const require = new XMLHttpRequest()
+require.open('GET','tasks.json',true)
+require.onload = function() {
+  const tasks = JSON.parse(this.responseText)
+  for (let i = 0; i < tasks.length; i++) {
+    const tbody = document.querySelector('.tasks__tbody')
+  
+    const tr = document.createElement('tr')
+    tr.classList.add('tasks__tr')
+    tbody.appendChild(tr)
+  
+    const td = document.createElement('td')
+    td.classList.add('tasks__td')
+    tr.appendChild(td)
+  
+    const tasksInfo = document.createElement('div')
+    tasksInfo.classList.add('tasks__td--info')
+    tasksInfo.innerHTML = `${tasks[i].date} - `
+    td.appendChild(tasksInfo)
+  
+    const tasksMatter = document.createElement('span')
+    tasksMatter.innerHTML = `${tasks[i].matter}`
+    tasksInfo.appendChild(tasksMatter)
+  
+    const tasksWarning = document.createElement('div')
+    tasksWarning.classList.add('tasks__td--warning')
+    tasksWarning.innerHTML = `${tasks[i].do}`
+    td.appendChild(tasksWarning)
+  }
 }
-
-tasks('09/10','Redação','Tema: fazer cronica do livro')
-tasks('11/10','Literatura','Trabalho: análise crítica do livro')
-tasks('17/10','Química','Prova: av1')
-tasks('18/10','Física','Prova: av1')
-tasks('18/10','Literatura','Prova: av1')
-tasks('19/10','Português','Prova: av1')
-tasks('26/10','Histŕoia','Prova: av1')
+require.send()
 
 //
 // GRADES
@@ -145,7 +143,7 @@ function gradesTable() {
   }
 
   const require = new XMLHttpRequest()
-  require.open('GET', 'notas.json', true)
+  require.open('GET', 'notas.json' , true)
   require.onload = function() {
     const nota = JSON.parse(this.responseText)
 

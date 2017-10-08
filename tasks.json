@@ -1,3 +1,37 @@
 [
-
+  {
+    "date": "09/10",
+    "matter": "Redação",
+    "do": "Tema: fazer cronica do livro"
+  },
+  {
+    "date": "11/10",
+    "matter": "Literatura",
+    "do": "Trabalho: análise crítica do livro"
+  },
+  {
+    "date": "17/10",
+    "matter": "Química",
+    "do": "Prova: av1"
+  },
+  {
+    "date": "18/10",
+    "matter": "Física",
+    "do": "Prova: av1"
+  },
+  {
+    "date": "18/10",
+    "matter": "Literatura",
+    "do": "Prova: av1"
+  },
+  {
+    "date": "19/10",
+    "matter": "Português",
+    "do": "Prova: av1"
+  },
+  {
+    "date": "26/10",
+    "matter": "História",
+    "do": "Prova: av1"
+  }
 ]
