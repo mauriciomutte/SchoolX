@@ -71,14 +71,38 @@ HEADER
 }
 
 .menu__nav {
-  background-color: #f9f9f9;
-  border-radius: 1px;
+  border-radius: 2px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,.3);
   display: none;
-  min-width: 160px;
-  position: absolute;
   text-align: left;
 }
+
+.menu__nav ul {
+  background-color: #f9f9f9;
+	float: left;
+  list-style: none;
+  margin: 0;
+  min-width: 140px;
+	padding: 0;
+	position: relative;
+}
+
+.menu__nav ul ul {
+	background-color: #fff;
+	display: none;
+  left: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.menu__nav ul ul a {
+  letter-spacing: 1px;
+  padding: 11px;
+}
+
+.menu__nav ul li:hover > ul { display: block; }
+
+.menu__nav li:hover { background-color: #f1f1f1; }
 
 .menu__nav li { list-style: none;}
 
