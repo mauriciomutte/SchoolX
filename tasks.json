@@ -13,6 +13,12 @@
     "do": "Matérias da AV1"
   },
   {
+    "date": "17/10",
+    "matter": "Matemática",
+    "category": "Prova",
+    "do": "Matérias da AV1"
+  },
+  {
     "date": "18/10",
     "matter": "Física",
     "category": "Prova",
@@ -30,12 +36,7 @@
     "category": "Prova",
     "do": "Matérias da AV1"
   },
-  {
-    "date": "21/10",
-    "matter": "Matemática",
-    "category": "Prova",
-    "do": "Matérias da AV1"
-  },
+
   {
     "date": "26/10",
     "matter": "História",
