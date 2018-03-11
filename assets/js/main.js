@@ -1,168 +1,85 @@
-// header var
-const menuBtn = document.querySelector('.menu__btn')
-const menuNav = document.querySelector('.menu__nav')
-const settingBtn = document.querySelector('.setting__btn')
-const settingNav = document.querySelector('.setting__nav')
+// Create object matter
 
-//
-// HEADER
-//
-
-menuBtn.addEventListener('click', function() {
-  event.stopPropagation();
-  menuNav.classList.toggle('menu__nav--show')
-  settingNav.classList.remove('setting__nav--show')
-})
-
-settingBtn.addEventListener('click', function() {
-  event.stopPropagation();
-  settingNav.classList.toggle('setting__nav--show')
-  menuNav.classList.remove('menu__nav--show')
-})
-
-window.onclick = function(event) {
-  if (menuNav.classList.contains('menu__nav--show') || settingNav.classList.contains('setting__nav--show')) {
-    menuNav.classList.remove('menu__nav--show')
-    settingNav.classList.remove('setting__nav--show')
+function createObjMatter(name, initials, teacherName, teacherLastName, color, dir) {
+  return {
+    'name': name,
+    'initials': initials,
+    'teacherName': teacherName,
+    'teacherLastName': teacherLastName,
+    'color': color,
+    'dir': dir
   }
 }
 
-//
-// SCHEDULE
-// 
+const arte = createObjMatter('Arte', 'Arte', 'Rosane', 'Conti Bones', '#8584BD', 'materia/arte')
+const biologia = createObjMatter('Biologia', 'BIO', 'Rafaela', 'Mônego', '#9932CC', 'materia/biologia')
+const educacaoFisica = createObjMatter('Educação Física', 'EF', 'Guilherme', '?', '#279AD0', 'materia/educacaoFisica')
+const filosofia = createObjMatter('Filosofia', 'FIL', 'William', '?', '#BB8940', 'materia/filosofia')
+const fisica = createObjMatter('Física', 'Física', 'Tatiane', 'Alves', '#3B8B42', 'materia/fisica')
+const geografia = createObjMatter('Geografia', 'GEO', 'Miosés', '?', '#37704D', 'materia/geografia')
+const historia = createObjMatter('História', 'HIS', 'Renata', '?', '#6398CE', 'materia/historia')
+const linguaEspanhola = createObjMatter('Língua Espanhola', 'LE', 'Cristiane', '?', '#4985C4', 'materia/linguaEspanhola')
+const linguaInglesa = createObjMatter('Língua Inglesa', 'LI', 'Marcos', '?', '#927963', 'materia/linguaInglesa')
+const linguaPortuguesa = createObjMatter('Língua Portuguesa', 'LP', 'Marlise', 'Fraga', '#61B5D9', 'materia/linguaPortuguesa')
+const literatura = createObjMatter('Literatura', 'LIT', 'Marlise', 'Fraga', '#EABB23', 'materia/literatura')
+const matematica = createObjMatter('Matemática', 'MAT', 'Márcio', 'Batista', '#3AB251', 'materia/matematica')
+const quimica = createObjMatter('Química', 'QUI', 'Valéria', '?', '#E4893A', 'materia/quimica')
+const redacao = createObjMatter('Redação', 'RED', 'Marlise', 'Fraga', '#C75753', 'materia/redacao')
+const sociologia = createObjMatter('Sociologia', 'SOC', 'William', '?', '#D8534E', 'materia/sociologia')
 
-function scheduleTable() {
-  const week = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex']
-  const firstPeriod = ['Art', 'Bio', 'Fís', 'Port', 'Filo']
-  const secondPeriod = ['Art', 'Bio', 'Fís', 'Port', 'Fís']
-  const thirdPeriod = ['Red', 'Mat', 'Socio', 'Hist', 'Mat']
-  const fourthPeriod = ['Qui', 'Mat', 'Esp', 'Hist', 'Mat']
-  const fifthPeriod = ['Ed.F', 'Qui', 'Lit', 'Geo', 'Ing']
-  const sixthPeriod = ['Ed.F', 'Qui', 'Bio', 'Geo', 'Ing']
-  
-  const tbody = document.querySelector('.schedule__tbody')
+// Create schedule
 
-  const tr1 = document.createElement('tr')
-  tbody.appendChild(tr1)
+function createScheduleTable() {
+  const weekDays = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex']
+  const periods = [
+    [redacao, matematica, fisica, arte, historia],
+    [matematica, educacaoFisica, fisica, geografia, historia],
+    [matematica, filosofia, biologia, geografia, matematica],
+    [linguaEspanhola, biologia, linguaPortuguesa, arte, linguaInglesa],
+    [educacaoFisica, biologia, linguaPortuguesa, quimica, fisica],
+    [quimica, sociologia, literatura, quimica, linguaInglesa]
+  ]
 
-  for (let i = 0; i < week.length; i++) {
-    const th = document.createElement('th')
-    th.classList.add('table__th')
-    th.innerHTML = week[i]
-    tr1.appendChild(th)
-  }
+  const table = document.querySelector('.schedule__table')
 
-  function periodTr(period) {
-    const tr2 = document.createElement('tr')
-    tbody.appendChild(tr2)
+  function createTh() {
+    const tr1 = document.createElement('tr')
+    table.appendChild(tr1)
 
-    for (let i = 0; i < firstPeriod.length; i++) {
-      const td = document.createElement('td')
-      td.classList.add('table__td')
-      td.innerHTML = period[i]
-      tr2.appendChild(td)
+    for (let i = 0; i < weekDays.length; i++) {
+      const th = document.createElement('th')
+      th.classList.add('table__th')
+      th.innerHTML = weekDays[i]
+      tr1.appendChild(th)
     }
   }
-  periodTr(firstPeriod)
-  periodTr(secondPeriod)
-  periodTr(thirdPeriod)
-  periodTr(fourthPeriod)
-  periodTr(fifthPeriod)
-  periodTr(sixthPeriod)
-}
+  createTh()
 
-scheduleTable()
+  function createTd() {
+    for (let i = 0; i < periods.length; i++) {
+      const tr2 = document.createElement('tr')
+      table.appendChild(tr2)
 
-//
-// TASKS
-// 
-
-const require = new XMLHttpRequest()
-require.open('GET','tasks.json',true)
-require.onload = function() {
-  const tasks = JSON.parse(this.responseText)
-  for (let i = 0; i < tasks.length; i++) {
-    const tbody = document.querySelector('.tasks__tbody')
+      for (let z = 0; z < periods[i].length; z++) {
+        var td = document.createElement('td')
+        td.classList.add('table__td')
+        tr2.appendChild(td)
   
-    const tr = document.createElement('tr')
-    tr.classList.add('tasks__tr')
-    tbody.appendChild(tr)
+        var a = document.createElement('a')
+        a.classList.add('table__a')
+        a.style.backgroundColor = periods[i][z].color
+        a.href = periods[i][z].dir
+        a.innerHTML = periods[i][z].initials
+        td.appendChild(a)
   
-    const td = document.createElement('td')
-    td.classList.add('tasks__td')
-    tr.appendChild(td)
-  
-    const tasksInfo = document.createElement('div')
-    tasksInfo.classList.add('tasks__td--info')
-    tasksInfo.innerHTML = `${tasks[i].date} - `
-    td.appendChild(tasksInfo)
-  
-    const tasksMatter = document.createElement('span')
-    tasksMatter.innerHTML = `${tasks[i].matter} - `
-    tasksInfo.appendChild(tasksMatter)
-
-    const tasksCategory = document.createElement('span')
-    tasksCategory.innerHTML = `${tasks[i].category}`
-    tasksInfo.appendChild(tasksCategory)
-  
-    const tasksWarning = document.createElement('div')
-    tasksWarning.classList.add('tasks__td--warning')
-    tasksWarning.innerHTML = `${tasks[i].do}`
-    td.appendChild(tasksWarning)
-  }
-}
-require.send()
-
-//
-// GRADES
-// 
-
-function gradesTable() {
-  const gradesTh = ['Matéria', '1 Tri', '2 Tri', '3 Tri']
-  const tbody = document.querySelector('.grades__tbody')
-
-  const tr1 = document.createElement('tr')
-  tbody.appendChild(tr1)
-
-  for (let i = 0; i < gradesTh.length; i++) {
-    const th = document.createElement('th')
-    th.classList.add('grades__th')
-    th.innerHTML = gradesTh[i]
-    tr1.appendChild(th)
-  }
-
-  function gradesMatter(matter, firstTrimester, secondTrimester, thirdTrimester){
-    const gradesTd = [matter, firstTrimester, secondTrimester, thirdTrimester]
-
-    const tr2 = document.createElement('tr')
-    tr2.classList.add('grades__tr')
-    tbody.appendChild(tr2)
-
-    for (let i = 0; i < gradesTd.length; i++) {
-      const tdMatter = document.createElement('td')
-      tdMatter.classList.add('grades__td')
-      tdMatter.innerHTML = gradesTd[i]
-      tr2.appendChild(tdMatter)    
-    }
-  }
-
-  const require = new XMLHttpRequest()
-  require.open('GET', 'notas.json' , true)
-  require.onload = function() {
-    const nota = JSON.parse(this.responseText)
-
-    for (let i = 0; i < nota.length; i++) {
-      gradesMatter(nota[i].matter, nota[i].first, nota[i].second, nota[i].third)
-    }
-    console.log('Pontos para passar:')
-    for (let i = 0; i < nota.length; i++) {
-      if (nota[i].third == '-') {
-        nota[i].third = 0
+        var span = document.createElement('span')
+        span.classList.add('table__span')
+        span.innerHTML = periods[i][z].teacherName
+        a.appendChild(span)
       }
-      
-      console.log('- ' + nota[i].matter + ": " + Math.round(((Number(nota[i].first) + Number(nota[i].second) + Number(nota[i].third))* -1)+ 21 ) + 'pts')
     }
   }
-  require.send()
+  createTd()
+
 }
-gradesTable()
+createScheduleTable()
