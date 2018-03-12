@@ -82,4 +82,3 @@ function createScheduleTable() {
   createTd()
 
 }
-createScheduleTable()
