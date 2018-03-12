@@ -11,13 +11,20 @@ body {
 /* HEADER */
 
 .header {
-  background-color: #282727;
+  background-color: rgba(0, 0, 0, .4);
+  position: absolute;
+  height: 52px;
+  width: 100%;
+}
+
+.header__a {
+  text-decoration: none;
 }
 
 .header__logo {
   color: #fff;
   font-size: 30px;
-  margin: 0;
+  margin: 0 auto;
   padding: 7px 0;
   text-align: center;
 }
