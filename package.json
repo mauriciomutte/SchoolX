@@ -1,7 +1,6 @@
 {
   "name": "schoolx",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,5 +24,9 @@
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^5.0.0"
+  },
+  "description": "",
+  "dependencies": {
+    "npm": "^5.7.1"
   }
 }
