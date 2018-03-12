@@ -83,3 +83,30 @@ function createScheduleTable() {
   createTd()
 
 }
+
+// Matter page
+
+function createMatterHeader(matter) {
+  const matterSection = document.querySelector('.' + matter.initials)
+
+  const matterHeader = document.createElement('div')
+  matterHeader.classList.add('matterHeader')
+  matterHeader.style.backgroundColor = matter.color
+  matterSection.appendChild(matterHeader)
+
+  const matterHeaderTitle = document.createElement('h2')
+  matterHeaderTitle.classList.add('matterHeader__title')
+  matterHeaderTitle.innerHTML = matter.name
+  matterHeader.appendChild(matterHeaderTitle)
+
+  const matterHeaderTeacher = document.createElement('h2')
+  matterHeaderTeacher.classList.add('matterHeader__teacher')
+  matterHeaderTeacher.innerHTML = matter.teacherFullName
+  matterHeader.appendChild(matterHeaderTeacher)
+}
+
+// Reminder
+
+const test = [12,16,11,14,13,15]
+test.sort(function(a,b){return a -b })
+console.log(test)
