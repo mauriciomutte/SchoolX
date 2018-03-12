@@ -6,6 +6,7 @@ function createObjMatter(name, initials, teacherName, teacherLastName, color, di
     'initials': initials,
     'teacherName': teacherName,
     'teacherLastName': teacherLastName,
+    'teacherFullName': teacherName + ' ' +  teacherLastName,
     'color': color,
     'dir': dir
   }
