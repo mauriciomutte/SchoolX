@@ -41,25 +41,29 @@ body {
 }
 
 .table__th {
-  font-size: 20px;
+  font-size: 17px;
   padding: 5px 0;
+}
+
+.table__td {
+  height: 10%;
+  width: 10%
 }
 
 .table__a {
   color: #fff;
   display: block;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 3px 60px 20px 6px;
+  padding: 4px 0 7px 5px;
   text-decoration: none;
-  width: 80px;
 }
 
 .table__td span {
   display: block;
   letter-spacing: 0px;  
-  font-size: 12px;
+  font-size: 10px;
   font-weight: lighter;  
 }
 
@@ -79,4 +83,30 @@ body {
 .matterHeader__teacher {
   font-weight: 300;
   margin: 10px 0;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 768px) {
+  .table__th {
+    font-size: 20px;
+    padding: 5px 0;
+  }
+
+  .table__td {
+    height: 0;
+    width: 0;
+  }
+  
+  .table__a {
+    font-size: 17px;
+    padding: 3px 60px 20px 6px;
+    width: 80px;
+  }
+
+  .table__td span {
+    display: block;
+    letter-spacing: 0px;  
+    font-size: 12px;
+    font-weight: lighter;  
+  }
 }
