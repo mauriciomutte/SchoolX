@@ -72,6 +72,10 @@ body {
 .matterHeader {
   padding: 10em 0 7em; 
   text-align: center;
+
+  -webkit-box-shadow: inset 0px -47px 50px -43px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px -47px 50px -43px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -47px 50px -43px rgba(0,0,0,0.75);
 }
 
 .matterHeader__title {
