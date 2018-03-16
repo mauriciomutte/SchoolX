@@ -1,5 +1,13 @@
 {
- "name": "App",
+  "name": "SchoolX",
+	"short_name": "SchoolX",
+	"theme_color": "#141414",
+	"background_color": "#000000",
+	"display": "standalone",
+	"scope": "/SchoolX/",
+	"start_url": "/SchoolX/",
+	"lang": "pt-BR",
+	"orientation": "any",
  "icons": [
   {
    "src": "\/assets/icon/android-icon-36x36.png",
