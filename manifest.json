@@ -4,8 +4,8 @@
 	"theme_color": "#141414",
 	"background_color": "#000000",
 	"display": "standalone",
-	"scope": "/SchoolX/",
-	"start_url": "/SchoolX/",
+	"scope": "/",
+	"start_url": "/",
 	"lang": "pt-BR",
 	"orientation": "any",
   "icons": [
