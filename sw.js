@@ -1,8 +1,17 @@
-const PRECACHE = 'precache-v6';
-const RUNTIME = 'runtime-v6';
+function swData() {
+  d = new Date()
+  year = d.getFullYear()
+  month = d.getMonth() + 1
+  day = d.getDate()
+  hour = d.getHours()
+  minute = d.getMinutes()
 
-// A list of local resources we always want to be cached.
-const PRECACHE_URLS = [
+  return year + '-' + month + '-' + day + '-' + hour + '-' + minute
+}
+
+const staticCacheName = 'SchoolX-' + swData();
+
+const filesToCache = [
   'index.html',
   'materia/arte.html',
   'materia/biologia.html',
@@ -23,50 +32,41 @@ const PRECACHE_URLS = [
   'assets/js/main.js'
 ];
 
-// The install handler takes care of precaching the resources we always need.
-self.addEventListener('install', event => {
+// Cache on install
+this.addEventListener("install", event => {
+  this.skipWaiting();
+
   event.waitUntil(
-    caches.open(PRECACHE)
-      .then(cache => cache.addAll(PRECACHE_URLS))
-      .then(self.skipWaiting())
-  );
+    caches.open(staticCacheName)
+      .then(cache => {
+        return cache.addAll(filesToCache);
+    })
+  )
 });
 
-// The activate handler takes care of cleaning up old caches.
-self.addEventListener('activate', event => {
-  const currentCaches = [PRECACHE, RUNTIME];
+// Clear cache on activate
+this.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(cacheNames => {
-      return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
-    }).then(cachesToDelete => {
-      return Promise.all(cachesToDelete.map(cacheToDelete => {
-        return caches.delete(cacheToDelete);
-      }));
-    }).then(() => self.clients.claim())
+      return Promise.all(
+        cacheNames
+          .filter(cacheName => (cacheName.startsWith('SchoolX-')))
+          .filter(cacheName => (cacheName !== staticCacheName))
+          .map(cacheName => caches.delete(cacheName))
+      );
+    })
   );
 });
 
-// The fetch handler serves responses for same-origin resources from a cache.
-// If no response is found, it populates the runtime cache with the response
-// from the network before returning it to the page.
-self.addEventListener('fetch', event => {
-  // Skip cross-origin requests, like those for Google Analytics.
-  if (event.request.url.startsWith(self.location.origin)) {
-    event.respondWith(
-      caches.match(event.request).then(cachedResponse => {
-        if (cachedResponse) {
-          return cachedResponse;
-        }
-
-        return caches.open(RUNTIME).then(cache => {
-          return fetch(event.request).then(response => {
-            // Put a copy of the response in the runtime cache.
-            return cache.put(event.request, response.clone()).then(() => {
-              return response;
-            });
-          });
-        });
+// Serve from Cache
+this.addEventListener("fetch", event => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        return response || fetch(event.request);
       })
-    );
-  }
+      .catch(() => {
+        return caches.match('index.html');
+      })
+  )
 });
