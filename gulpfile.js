@@ -8,15 +8,16 @@ var watch = require('gulp-watch')
 var browserSync = require('browser-sync').create()
 var reload = browserSync.reload
 
-gulp.task('generate-service-worker', function(callback) {
-  var path = require('path');
-  var swPrecache = require('sw-precache');
-  var rootDir = '';
+gulp.task('sw', function(callback) {
+	var path = require('path');
+	var swPrecache = require('sw-precache');
+	var fs = require('fs');
+	var rootDir = '';
+	var options = JSON.parse(fs.readFileSync('./sw-precache-config.json', 'utf-8'));
 
-  swPrecache.write(path.join(rootDir, 'sw.js'), {
-    staticFileGlobs: [rootDir + '**/*.{js,html,css,png,jpg,gif}'],
-    stripPrefix: rootDir
-  }, callback);
+	options.ignoreUrlParametersMatching = [/./];
+	options.cacheId += "-" + (new Date()).getTime();
+	swPrecache.write(path.join(rootDir, 'sw.js'), options, callback);
 });
 
 // BrowserSync

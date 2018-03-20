@@ -1,0 +1,15 @@
+{
+  "swFile": "sw.js",
+  "staticFileGlobs": [
+    "manifest.json",
+    "assets/css/style.css",
+    "index.html",
+    "materia/*.html"
+  ],
+  "handleFetch": true,
+  "stripPrefix": "SchoolX/",
+  "cacheId": "SchoolX",
+  "maximumFileSizeToCacheInBytes": 4194304,
+  "ignoreUrlParametersMatching": "[/./]",
+  "verbose": true
+}
