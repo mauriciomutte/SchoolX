@@ -70,8 +70,7 @@ body {
 /* TESTS */
 .tests {
   margin: 0 0 3em;
-  padding: 0 3px;
-  
+  padding: 6em 3px;
 }
 
 .test__h2 {
