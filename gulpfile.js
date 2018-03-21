@@ -9,15 +9,14 @@ var browserSync = require('browser-sync').create()
 var reload = browserSync.reload
 
 gulp.task('sw', function(callback) {
-	var path = require('path');
-	var swPrecache = require('sw-precache');
-	var fs = require('fs');
-	var rootDir = '';
-	var options = JSON.parse(fs.readFileSync('./sw-precache-config.json', 'utf-8'));
+  var path = require('path');
+  var swPrecache = require('sw-precache');
+  var rootDir = './';
 
-	options.ignoreUrlParametersMatching = [/./];
-	options.cacheId += "-" + (new Date()).getTime();
-	swPrecache.write(path.join(rootDir, 'sw.js'), options, callback);
+  swPrecache.write(path.join(rootDir, 'sw.js'), {
+    staticFileGlobs: [rootDir + 'manifest.json', 'assets/css/style.css', 'index.html', 'materia/*.html', 'agenda/index.html'],
+    stripPrefix: rootDir
+  }, callback);
 });
 
 // BrowserSync
