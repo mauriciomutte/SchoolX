@@ -17,11 +17,32 @@ body {
   width: 100%;
 }
 
-.header__a {
-  text-decoration: none;
+.header__back,
+.header__logo,
+.header__config {
+  display: inline-block;
+  width: 33%;
+}
+
+.back__arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  margin: 2px 20px;
+  padding: 7px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 
 .header__logo {
+  margin: auto;
+}
+
+.logo__a {
+  text-decoration: none;
+}
+
+.logo__h1 {
   color: #fff;
   font-size: 30px;
   margin: 0 auto;
@@ -166,6 +187,11 @@ body {
 
 /* MEDIA QUERY */
 @media (min-width: 768px) {
+  /* HEADER */
+  .back__arrow {
+    margin: 2px 35px;
+  }
+
   /* MENU */
   .menu__link {
     margin: 0 3%;
