@@ -8,7 +8,8 @@ function createObjMatter(name, initials, teacherName, teacherLastName, color, di
     'teacherLastName': teacherLastName,
     'teacherFullName': teacherName + ' ' +  teacherLastName,
     'color': color,
-    'dir': dir
+    'dir': dir,
+    'provas': {}
   }
 }
 
@@ -27,6 +28,68 @@ const matematica = createObjMatter('Matemática', 'MAT', 'Márcio', 'Batista', '
 const quimica = createObjMatter('Química', 'QUI', 'Valéria', '?', '#E4893A', 'materia/quimica.html')
 const redacao = createObjMatter('Redação', 'RED', 'Marlise', 'Fraga', '#C75753', 'materia/redacao.html')
 const sociologia = createObjMatter('Sociologia', 'SOC', 'William', '?', '#D8534E', 'materia/sociologia.html')
+
+// add tests in matter object
+function addTest(matter, type, day, month) {
+  var simpleDate = day + '/' + month
+  var fullDate = new Date(2018, (month - 1), day)
+  var prova = matter.provas
+  var testType
+
+  switch (type) {
+    case 1:
+      //AP1
+      testType = 'AP1'
+      prova = prova.ap1
+      break;
+
+    case 2:
+      //AP2
+      testType = 'AP2'
+      prova = prova.ap2
+      break;
+
+    case 3:
+      //TR1
+      testType = 'TR1'
+      prova = prova.tr1
+      break;
+
+    case 4:
+      //TR2
+      testType = 'TR2'
+      prova = prova.tr2
+      break;
+  }
+
+  prova = {
+    'data': simpleDate,
+    'fullDate': fullDate,
+    'matterName': matter.name,
+    'type': testType
+  }
+  console.log(prova.data + ' - ' + prova.matterName + ' - ' + prova.type)
+}
+
+// Call tests
+addTest(quimica, 1, 29, 03)
+addTest(linguaEspanhola, 1, 26, 03)
+addTest(linguaEspanhola, 2, 16, 04)
+addTest(linguaEspanhola, 3, 14, 05)
+addTest(fisica, 3, 28, 03)
+addTest(fisica, 1, 04, 04)
+addTest(linguaPortuguesa, 1, 04, 04)
+addTest(linguaPortuguesa, 2, 25, 04)
+addTest(linguaPortuguesa, 3, 09, 05)
+addTest(linguaPortuguesa, 4, 16, 05)
+addTest(literatura, 1, 11, 04)
+addTest(literatura, 3, 18, 04)
+addTest(literatura, 2, 25, 04)
+addTest(literatura, 4, 16, 05)
+addTest(redacao, 1, 02, 04)
+addTest(redacao, 3, 18, 04)
+addTest(redacao, 2, 23, 04)
+addTest(redacao, 4, 07, 05)
 
 // Create schedule
 
@@ -107,6 +170,7 @@ function createMatterHeader(matter) {
 
 // Reminder
 
-const test = [12,16,11,14,13,15]
-test.sort(function(a,b){return a -b })
-console.log(test)
+// const test = [biologia.provas.ap1.fullData, biologia.provas.ap2.fullData]
+// console.log(test)
+// test.sort(function(a,b){return a - b })
+// console.log(test)
