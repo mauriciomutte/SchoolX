@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SchoolX</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/icon/favicon-16x16.png">
+  <!-- Apple touch icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icon/apple-touch-icon.png">
+  <!-- Mac icon -->
+  <link rel="mask-icon" href="../assets/icon/safari-pinned-tab.svg" color="#1400ff">
+  <!-- MS icon -->
+  <meta name="apple-mobile-web-app-title" content="SchoolX">
+  <meta name="application-name" content="SchoolX">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#000000">
+  <!-- Add manifest -->
+  <link rel="manifest" href="../manifest.json">
+  <!-- Add Service Work -->
+  <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('../sw.js').then(function(registration) {
+        console.info('Service Worker registration successful with scope: ', registration.scope);
+      }).catch(function(err) {
+        console.error('Service Worker registration failed: ', err);
+      });
+    }
+  </script>
+</head>
+<body>
+  <!-- <header> -->
+  <header class="header">
+    <div class="header__back">
+      <a href="../index.html" class="back__a">
+        <i class="back__arrow"></i>
+      </a>
+    </div>
+    <div class="header__logo">
+      <a href="./" class="logo__a">
+        <h1 class="logo__h1">SchoolX</h1>
+      </a>
+    </div>
+    <div class="header__config"></div>
+  </header>
+  <!-- </header> -->
+  <!-- <leituras>  -->
+  <section class="leituras">
+    <table class="leituras__table">
+      <tr class="leituras__table__tr">
+        <th class="leituras__table__th">Capa</th>
+        <th class="leituras__table__th">Título</th>
+        <th class="leituras__table__th">Autor</th>
+        <th class="leituras__table__th">Editora</th>
+        <th class="leituras__table__th">Data</th>
+      </tr>
+      <tr class="leituras__table__tr">
+        <td class="leituras__table__td"><img src="#" alt="#" class="leituras__table__img"></td>
+        <td class="leituras__table__td">Os sofrimentos do jovem Werther</td>
+        <td class="leituras__table__td">Goethe</td>
+        <td class="leituras__table__td">L&PM</td>
+        <td class="leituras__table__td">Março</td>
+      </tr>
+      <tr class="leituras__table__tr">
+        <td class="leituras__table__td"><img src="#" alt="#" class="leituras__table__img"></td>
+        <td class="leituras__table__td">Vicente em palavras</td>
+        <td class="leituras__table__td">Caio Riter</td>
+        <td class="leituras__table__td">Editora LÊ</td>
+        <td class="leituras__table__td">Maio</td>
+      </tr>
+      <tr class="leituras__table__tr">
+        <td class="leituras__table__td"><img src="#" alt="#" class="leituras__table__img"></td>
+        <td class="leituras__table__td">As vantagens de ser invisível</td>
+        <td class="leituras__table__td">Stephen Chbosky</td>
+        <td class="leituras__table__td">Rocco</td>
+        <td class="leituras__table__td">Junho</td>
+      </tr>
+      <tr class="leituras__table__tr">
+        <td class="leituras__table__td"><img src="#" alt="#" class="leituras__table__img"></td>
+        <td class="leituras__table__td">Eu sou Malala</td>
+        <td class="leituras__table__td">Malala Yosafzai</td>
+        <td class="leituras__table__td">Companhia das Letras</td>
+        <td class="leituras__table__td">Julho</td>
+      </tr>
+      <tr class="leituras__table__tr">
+        <td class="leituras__table__td"><img src="#" alt="#" class="leituras__table__img"></td>
+        <td class="leituras__table__td">Dom Casmurro em HQ</td>
+        <td class="leituras__table__td">Machado de Assis</td>
+        <td class="leituras__table__td">Ática</td>
+        <td class="leituras__table__td">Agostp</td>
+      </tr>
+      <tr class="leituras__table__tr">
+        <td class="leituras__table__td"><img src="#" alt="#" class="leituras__table__img"></td>
+        <td class="leituras__table__td">O cortiço</td>
+        <td class="leituras__table__td">Aluíso Azevedo</td>
+        <td class="leituras__table__td">Várias editoras</td>
+        <td class="leituras__table__td">Setembro</td>
+      </tr>
+      <tr class="leituras__table__tr">
+        <td class="leituras__table__td"><img src="#" alt="#" class="leituras__table__img"></td>
+        <td class="leituras__table__td">O conde de Monte Cristo</td>
+        <td class="leituras__table__td">Alexandre Dumas</td>
+        <td class="leituras__table__td">Scipone</td>
+        <td class="leituras__table__td">Outubro</td>
+      </tr>
+      <tr class="leituras__table__tr">
+        <td class="leituras__table__td"><img src="#" alt="#" class="leituras__table__img"></td>
+        <td class="leituras__table__td">O filho de mil homens</td>
+        <td class="leituras__table__td">Valter Hugo Mãe</td>
+        <td class="leituras__table__td">Globo</td>
+        <td class="leituras__table__td">Novembro</td>
+      </tr>
+    </table>
+  </section>
+  <!-- </leituras> -->
+</body>

@@ -116,13 +116,15 @@ body {
   font-weight: lighter;  
 }
 
-/* TESTS */
-.tests {
+/* TESTS and LEITURAS */
+.tests,
+.leituras {
   margin: 0 0 3em;
   padding: 6em 3px;
 }
 
-.test__h2 {
+.test__h2,
+.leituras__h2 {
   background-color: crimson;
   color: #fff;
   display: block;
@@ -134,17 +136,15 @@ body {
   text-align: center;
 }
 
-.tests__table {
+.tests__table,
+.leituras__table {
   border-spacing: 0 2px;  
   max-width: 700px;
   margin: 0 auto;
 }
 
-.tests__table__th {
-  text-align: left;
-}
-
-.tests__table__td {
+.tests__table__td,
+.leituras__table__td {
   background-color: crimson;
   font-size: 18px;
   font-weight: 300;
@@ -152,15 +152,20 @@ body {
   width: 10%;
 }
 
-.tests__table__th {
+.tests__table__th,
+.leituras__table__th {
   background-color: white;
   color: crimson;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
+  text-align: left;
   text-transform: uppercase;
   padding: 6px 20px 6px 20px;
 }
+
+/* LEITURAS */
+
 
 /* MATTER HEADER */
 
