@@ -117,14 +117,12 @@ body {
 }
 
 /* TESTS and LEITURAS */
-.tests,
-.leituras {
+.tests {
   margin: 0 0 3em;
   padding: 6em 3px;
 }
 
-.test__h2,
-.leituras__h2 {
+.test__h2 {
   background-color: crimson;
   color: #fff;
   display: block;
@@ -136,15 +134,13 @@ body {
   text-align: center;
 }
 
-.tests__table,
-.leituras__table {
+.tests__table {
   border-spacing: 0 2px;  
   max-width: 700px;
   margin: 0 auto;
 }
 
-.tests__table__td,
-.leituras__table__td {
+.tests__table__td {
   background-color: crimson;
   font-size: 18px;
   font-weight: 300;
@@ -152,8 +148,7 @@ body {
   width: 10%;
 }
 
-.tests__table__th,
-.leituras__table__th {
+.tests__table__th {
   background-color: white;
   color: crimson;
   font-size: 16px;
@@ -165,7 +160,50 @@ body {
 }
 
 /* LEITURAS */
+.leituras {
+  padding: 5em 0 5em;
+  text-align: center;
+}
 
+.leituras__book {
+  background-color: #fff;
+  border: 3px solid crimson;
+  display: inline-block;
+  height: 437px;
+  margin: 10px;
+  padding: 0;
+  vertical-align: top;
+  width: 250px;
+}
+
+.leituras__book__capa {
+  display: block;
+  height: 140px;
+  padding: 20px 0;
+  margin: auto;
+  width: auto;
+}
+
+.leituras__book__ul {
+  background-color: crimson;
+  height: 257px;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.leituras__book__li {
+  list-style: none;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 10px 0;
+  text-align: left;
+}
+
+.leituras__book__li span {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+}
 
 /* MATTER HEADER */
 
