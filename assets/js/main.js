@@ -72,11 +72,15 @@ function addTest(matter, type, day, month) {
 }
 
 // Call tests
-addTest(quimica, 1, 29, 03)
-addTest(linguaEspanhola, 1, 26, 03)
+addTest(biologia, 1, 10, 04)
+addTest(geografia, 1, 12, 04)
+addTest(linguaInglesa, 1, 13, 04)
+addTest(linguaInglesa, 1, 20, 04)
+addTest(linguaInglesa, 3, 04, 05)
+addTest(linguaInglesa, 4, 11, 05)
+addTest(linguaInglesa, 2, 18, 05)
 addTest(linguaEspanhola, 2, 16, 04)
 addTest(linguaEspanhola, 3, 14, 05)
-addTest(fisica, 3, 28, 03)
 addTest(fisica, 1, 04, 04)
 addTest(linguaPortuguesa, 1, 04, 04)
 addTest(linguaPortuguesa, 2, 25, 04)
