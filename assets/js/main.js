@@ -8,7 +8,8 @@ function createObjMatter(name, initials, teacherName, teacherLastName, color, di
     'teacherLastName': teacherLastName,
     'teacherFullName': teacherName + ' ' +  teacherLastName,
     'color': color,
-    'dir': dir
+    'dir': dir,
+    'tests': []
   }
 }
 
@@ -106,7 +107,12 @@ function createMatterHeader(matter) {
 }
 
 // Test
-function createTestTable(date, matter, type) {
+function createTestTable(matter, date, type) {
+  matter.tests.push({
+    'date': date,
+    'type': type
+  })
+
   const testTable = document.querySelector('.tests__table')
 
   const tr = document.createElement('tr')
@@ -120,7 +126,7 @@ function createTestTable(date, matter, type) {
 
   const testMatter = document.createElement('td')
   testMatter.classList.add('tests__table__td')
-  testMatter.innerHTML = matter
+  testMatter.innerHTML = matter.name
   tr.appendChild(testMatter)
 
   const testType = document.createElement('td')
