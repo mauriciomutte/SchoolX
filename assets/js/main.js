@@ -138,8 +138,6 @@ function createMatterHeader(matter) {
       matterNotaThType.innerHTML = 'Tipo'
       matterNotaTr0.appendChild(matterNotaThType)
 
-      console.log(matter.tests.length)
-
       for (let i = 0; i < matter.tests.length; i++) {
         matterNotaTr = document.createElement('tr')
         matterNotaTr.classList.add('matterNota__tr')
@@ -168,7 +166,7 @@ function createMatterHeader(matter) {
   createMatterNota()
 }
 
-// Test
+// createTestTable
 function createTestTable(matter, date, type) {
   matter.tests.push({
     'date': date,
@@ -177,22 +175,26 @@ function createTestTable(matter, date, type) {
 
   const testTable = document.querySelector('.tests__table')
 
-  const tr = document.createElement('tr')
-  tr.classList.add('tests__table__tr')
-  testTable.appendChild(tr)
-
-  const testDate = document.createElement('td')
-  testDate.classList.add('tests__table__td')
-  testDate.innerHTML = date
-  tr.appendChild(testDate)
-
-  const testMatter = document.createElement('td')
-  testMatter.classList.add('tests__table__td')
-  testMatter.innerHTML = matter.name
-  tr.appendChild(testMatter)
-
-  const testType = document.createElement('td')
-  testType.classList.add('tests__table__td')
-  testType.innerHTML = type
-  tr.appendChild(testType)
+  if (testTable !== null) {
+    const tr = document.createElement('tr')
+    tr.classList.add('tests__table__tr')
+    testTable.appendChild(tr)
+  
+    const testDate = document.createElement('td')
+    testDate.classList.add('tests__table__td')
+    testDate.innerHTML = date
+    tr.appendChild(testDate)
+  
+    const testMatter = document.createElement('td')
+    testMatter.classList.add('tests__table__td')
+    testMatter.innerHTML = matter.name
+    tr.appendChild(testMatter)
+  
+    const testType = document.createElement('td')
+    testType.classList.add('tests__table__td')
+    testType.innerHTML = type
+    tr.appendChild(testType)
+  }
 }
+
+// Call createTestTable
