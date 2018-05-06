@@ -104,6 +104,68 @@ function createMatterHeader(matter) {
   matterHeaderTeacher.classList.add('matterHeader__teacher')
   matterHeaderTeacher.innerHTML = matter.teacherFullName
   matterHeader.appendChild(matterHeaderTeacher)
+
+
+  function createMatterNota() {
+    matterNota = document.createElement('div')
+    matterNota.classList.add('matterNota')
+    matterSection.appendChild(matterNota)
+
+    matterNotaTitle = document.createElement('h4')
+    matterNotaTitle.classList.add('matterNota__title')
+    matterNotaTitle.style.backgroundColor = matter.color
+    matterNotaTitle.innerHTML = 'Provas'
+    matterNota.appendChild(matterNotaTitle)
+
+    if (matter.tests.length > 0) {
+      matterNotaTable = document.createElement('table')
+      matterNotaTable.classList.add('matterNota__table')
+      matterNota.appendChild(matterNotaTable)
+
+      matterNotaTr0 = document.createElement('tr')
+      matterNotaTr0.classList.add('matterNota__tr')
+      matterNotaTable.appendChild(matterNotaTr0)
+
+      matterNotaThDate = document.createElement('th')
+      matterNotaThDate.classList.add('matterNota__th')
+      matterNotaThDate.style.color = matter.color
+      matterNotaThDate.innerHTML = 'Data'
+      matterNotaTr0.appendChild(matterNotaThDate)
+
+      matterNotaThType = document.createElement('th')
+      matterNotaThType.classList.add('matterNota__th')
+      matterNotaThType.style.color = matter.color
+      matterNotaThType.innerHTML = 'Tipo'
+      matterNotaTr0.appendChild(matterNotaThType)
+
+      console.log(matter.tests.length)
+
+      for (let i = 0; i < matter.tests.length; i++) {
+        matterNotaTr = document.createElement('tr')
+        matterNotaTr.classList.add('matterNota__tr')
+        matterNotaTable.appendChild(matterNotaTr)
+      
+        matterNotaDate = document.createElement('td')
+        matterNotaDate.classList.add('matterNota__td')
+        matterNotaDate.style.backgroundColor = matter.color
+        matterNotaDate.innerHTML = matter.tests[i].date
+        matterNotaTr.appendChild(matterNotaDate)
+      
+        matterNotaType = document.createElement('td')
+        matterNotaType.classList.add('matterNota__td')
+        matterNotaType.style.backgroundColor = matter.color
+        matterNotaType.innerHTML = matter.tests[i].type
+        matterNotaTr.appendChild(matterNotaType)
+      }
+    } else {
+      matterNotaError = document.createElement('p')
+      matterNotaError.classList.add('matterNota__error')
+      matterNotaError.style.color = matter.color
+      matterNotaError.innerHTML = 'Não há prova para esta matéria'
+      matterNota.appendChild(matterNotaError)
+    }
+  }
+  createMatterNota()
 }
 
 // Test

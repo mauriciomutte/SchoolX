@@ -228,6 +228,51 @@ body {
   margin: 10px 0;
 }
 
+/* MATTER NOTA */
+.matterNota {
+  display: table;
+  text-align: center;  
+  margin: 4em auto;
+}
+
+.matterNota__table {
+  border-spacing: 0 2px;  
+}
+
+.matterNota__title {
+  color: #fff;
+  display: block;
+  letter-spacing: 7px; 
+  font-size: 24px;
+  margin: 0;
+  width: 244px;
+  padding: 10px;
+}
+
+.matterNota__error {
+  background-color: #fff;
+  font-weight: bolder;
+  margin: 2px auto;
+  padding: 12px 0;
+  text-align: center;
+  width: 264px;
+}
+
+.matterNota__th {
+  background-color: #fff;
+  font-size: 17px;
+  padding: 6px;
+  text-transform: uppercase;
+  width: 120px;
+}
+
+.matterNota__td {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 4px;
+}
+
 /* MEDIA QUERY */
 @media (min-width: 768px) {
   /* HEADER */
