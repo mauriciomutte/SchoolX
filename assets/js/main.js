@@ -1,6 +1,6 @@
 // Create object matter
 
-function createObjMatter(name, initials, teacherName, teacherLastName, color, dir) {
+function createObjMatter(name, initials, teacherName, teacherLastName, color, dir, dirConteudox) {
   return {
     'name': name,
     'initials': initials,
@@ -9,25 +9,26 @@ function createObjMatter(name, initials, teacherName, teacherLastName, color, di
     'teacherFullName': teacherName + ' ' +  teacherLastName,
     'color': color,
     'dir': dir,
+    'dirConteudox': dirConteudox,
     'tests': []
   }
 }
 
-const arte = createObjMatter('Arte', 'Arte', 'Rosane', 'Conti Bones', '#8584BD', 'materia/arte.html')
-const biologia = createObjMatter('Biologia', 'BIO', 'Rafaela', 'Mônego', '#9932CC', 'materia/biologia.html')
-const educacaoFisica = createObjMatter('Educação Física', 'EF', 'Eduardo', 'Machado', '#279AD0', 'materia/educacaoFisica.html')
-const filosofia = createObjMatter('Filosofia', 'FIL', 'William', 'Vasconcelos', '#BB8940', 'materia/filosofia.html')
-const fisica = createObjMatter('Física', 'Física', 'Tatiane', 'Alves', '#3B8B42', 'materia/fisica.html')
-const geografia = createObjMatter('Geografia', 'GEO', 'Miosés', 'Ferreira', '#37704D', 'materia/geografia.html')
-const historia = createObjMatter('História', 'HIS', 'Renata', 'Rocha', '#6398CE', 'materia/historia.html')
-const linguaEspanhola = createObjMatter('Língua Espanhola', 'LE', 'Cristiane', 'Carvalho', '#4985C4', 'materia/linguaEspanhola.html')
-const linguaInglesa = createObjMatter('Língua Inglesa', 'LI', 'Marcos', 'Oliveira', '#927963', 'materia/linguaInglesa.html')
-const linguaPortuguesa = createObjMatter('Língua Portuguesa', 'LP', 'Marlise', 'Fraga', '#61B5D9', 'materia/linguaPortuguesa.html')
-const literatura = createObjMatter('Literatura', 'LIT', 'Marlise', 'Fraga', '#EABB23', 'materia/literatura.html')
-const matematica = createObjMatter('Matemática', 'MAT', 'Márcio', 'Batista', '#3AB251', 'materia/matematica.html')
-const quimica = createObjMatter('Química', 'QUI', 'Valéria', 'Correa', '#E4893A', 'materia/quimica.html')
-const redacao = createObjMatter('Redação', 'RED', 'Marlise', 'Fraga', '#C75753', 'materia/redacao.html')
-const sociologia = createObjMatter('Sociologia', 'SOC', 'William', 'Vasconcelos', '#D8534E', 'materia/sociologia.html')
+const arte = createObjMatter('Arte', 'Arte', 'Rosane', 'Conti Bones', '#8584BD', 'materia/arte.html', 'arte')
+const biologia = createObjMatter('Biologia', 'BIO', 'Rafaela', 'Mônego', '#9932CC', 'materia/biologia.html', 'biologia')
+const educacaoFisica = createObjMatter('Educação Física', 'EF', 'Eduardo', 'Machado', '#279AD0', 'materia/educacaoFisica.html', 'edfis')
+const filosofia = createObjMatter('Filosofia', 'FIL', 'William', 'Vasconcelos', '#BB8940', 'materia/filosofia.html', 'filosofia')
+const fisica = createObjMatter('Física', 'Física', 'Tatiane', 'Alves', '#3B8B42', 'materia/fisica.html', 'fisica')
+const geografia = createObjMatter('Geografia', 'GEO', 'Miosés', 'Ferreira', '#37704D', 'materia/geografia.html', 'geografia')
+const historia = createObjMatter('História', 'HIS', 'Renata', 'Rocha', '#6398CE', 'materia/historia.html', 'historia')
+const linguaEspanhola = createObjMatter('Língua Espanhola', 'LE', 'Cristiane', 'Carvalho', '#4985C4', 'materia/linguaEspanhola.html', 'espanhol')
+const linguaInglesa = createObjMatter('Língua Inglesa', 'LI', 'Marcos', 'Oliveira', '#927963', 'materia/linguaInglesa.html', 'ingles')
+const linguaPortuguesa = createObjMatter('Língua Portuguesa', 'LP', 'Marlise', 'Fraga', '#61B5D9', 'materia/linguaPortuguesa.html', 'portugues')
+const literatura = createObjMatter('Literatura', 'LIT', 'Marlise', 'Fraga', '#EABB23', 'materia/literatura.html', 'literatura')
+const matematica = createObjMatter('Matemática', 'MAT', 'Márcio', 'Batista', '#3AB251', 'materia/matematica.html', 'matematica')
+const quimica = createObjMatter('Química', 'QUI', 'Valéria', 'Correa', '#E4893A', 'materia/quimica.html', 'quimica')
+const redacao = createObjMatter('Redação', 'RED', 'Marlise', 'Fraga', '#C75753', 'materia/redacao.html', 'redacao')
+const sociologia = createObjMatter('Sociologia', 'SOC', 'William', 'Vasconcelos', '#D8534E', 'materia/sociologia.html', 'sociologia')
 
 // Create schedule
 
@@ -105,11 +106,15 @@ function createMatterHeader(matter) {
   matterHeaderTeacher.innerHTML = matter.teacherFullName
   matterHeader.appendChild(matterHeaderTeacher)
 
+  matterBody = document.createElement('div')
+  matterBody.classList.add('matterBody')
+  matterSection.appendChild(matterBody)
+
 
   function createMatterNota() {
     matterNota = document.createElement('div')
     matterNota.classList.add('matterNota')
-    matterSection.appendChild(matterNota)
+    matterBody.appendChild(matterNota)
 
     matterNotaTitle = document.createElement('h4')
     matterNotaTitle.classList.add('matterNota__title')
@@ -164,6 +169,31 @@ function createMatterHeader(matter) {
     }
   }
   createMatterNota()
+
+  function createMatterContent() {
+    matterContent = document.createElement('div')
+    matterContent.classList.add('matterContent')
+    matterBody.appendChild(matterContent)
+
+    matterContentTitle = document.createElement('h4')
+    matterContentTitle.classList.add('matterContent__title')
+    matterContentTitle.style.backgroundColor = matter.color
+    matterContentTitle.innerHTML = 'Conteúdo'
+    matterContent.appendChild(matterContentTitle)
+
+    matterContentBox = document.createElement('div')
+    matterContentBox.classList.add('matterContent__box')
+    matterContent.appendChild(matterContentBox)
+
+    matterContentBtn = document.createElement('a')
+    matterContentBtn.classList.add('matterContent__btn')
+    matterContentBtn.style.backgroundColor = matter.color
+    matterContentBtn.href = '/ConteudoX/segundo/materia/' + matter.dirConteudox + '.html'
+    matterContentBtn.innerHTML = 'Ver conteúdo'
+    matterContentBox.appendChild(matterContentBtn)
+
+  }
+  createMatterContent()
 }
 
 // createTestTable
