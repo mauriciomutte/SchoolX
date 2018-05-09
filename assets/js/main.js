@@ -228,8 +228,6 @@ function createTestTable(matter, date, type) {
 }
 
 // Call createTestTable
-createTestTable(sociologia, '08/05', 'AT')
-createTestTable(fisica, '09/05', 'AT')
 createTestTable(geografia,'10/05', 'AT')
 createTestTable(arte, '10/05', 'AT')
 createTestTable(quimica, '10/05', 'AP2')
