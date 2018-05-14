@@ -228,15 +228,3 @@ function createTestTable(matter, date, type) {
 }
 
 // Call createTestTable
-createTestTable(linguaInglesa, '11/05', 'AP2')
-createTestTable(redacao, '14/05', 'AT')
-createTestTable(redacao, '14/05', 'TR')
-createTestTable(linguaEspanhola, '14/05', 'AT')
-createTestTable(filosofia, '15/05', 'AT')
-createTestTable(sociologia, '15/05', 'AT')
-createTestTable(biologia, '16/05', 'AT')
-createTestTable(linguaPortuguesa, '16/05', 'AT')
-createTestTable(linguaPortuguesa, '16/05', 'TR')
-createTestTable(literatura, '16/05', 'AT')
-createTestTable(quimica, '17/05', 'AT')
-createTestTable(linguaInglesa, '18/05', 'AT')
