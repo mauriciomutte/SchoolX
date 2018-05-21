@@ -228,3 +228,18 @@ function createTestTable(matter, date, type) {
 }
 
 // Call createTestTable
+createTestTable(arte, '08/12', 'Prova')
+createTestTable(biologia, '08/12', 'Prova')
+createTestTable(educacaoFisica, '08/12', 'Prova')
+createTestTable(filosofia, '08/12', 'Prova')
+createTestTable(fisica, '08/12', 'Prova')
+createTestTable(geografias, '08/12', 'Prova')
+createTestTable(historia, '08/12', 'Prova')
+createTestTable(linguaEspanhola, '08/12', 'Prova')
+createTestTable(linguaInglesa, '08/12', 'Prova')
+createTestTable(linguaPortuguesa, '08/12', 'Prova')
+createTestTable(literatura, '08/12', 'Prova')
+createTestTable(matematica, '08/12', 'Prova')
+createTestTable(quimica, '08/12', 'Prova')
+createTestTable(redacao, '08/12', 'Prova')
+createTestTable(sociologia, '08/12', 'Prova')
