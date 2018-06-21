@@ -1,0 +1,298 @@
+{
+  "fisica": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+        "Trabalho (dinâmica)",
+        "Potênica (dinâmica)",
+        "Energia mecânica (dinâmica)",
+        "Impulso (dinâmica)",
+        "Quantidade de movimento (dinâmica)",
+        "Dilatação de sólidos (linear, superficial e volumétrica)",
+        "Temperatura (tremometria)",
+        "Escalas termométricas (tremometria)",
+        "Conversões (tremometria)",
+        "Calor (calorimetria)",
+        "Trocas de calor (calorimetria)",
+        "Propagação de calor (calorimetria)",
+        "Capacidade térmica (calorimetria)"
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  },
+  "matematica": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+        "Trigonometria no triângulo retângulo",
+        "Círculo trigonométrico",
+        "Funções trigonométricas"
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  },
+  "quimica": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+        "Concentração de soluções",
+        "Diluição de soluções",
+        "Mistura de soluções",
+        "Propriedades coligativas"
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  },
+  "biologia": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+        "Taxonomia",
+        "Nomenclatura científica",
+        "Reinos da natureza"
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  },
+  "filosofia": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  },
+  "sociologia": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  },
+  "geografia": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+        "América do Norte",
+        "América Central"
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  },
+  "historia": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  },
+  "portugues": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+        "Interpretação de textos",
+        "Pronomes (pessoais, possessivos e demonstrativos)"
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  },
+  "literatura": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+        "Gerações romanticas"
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  },
+  "redacao": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+        "Dissertação argumentativa",
+        "Texto enciclopédico",
+        "Reportagem"
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  },
+  "ingles": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+        "Modal verbs",
+        "Prepositions of time"
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  },
+  "espanhol": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+        "Elementos de coesão",
+        "Presente do indicativo",
+        "Compreensão textual"
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  },
+  "arte": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+        "Pop art",
+        "Xilogravura"
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  },
+  "edf": {
+    "firstTri": {
+      "title": "1º Trimestre",
+      "content": [
+        "Estrutura do corpo humano",
+        "Articulações",
+        "Músculos"
+      ]
+    },
+    "secondTri": {
+      "title": "2º Trimestre",
+      "content": [
+      ]
+    },
+    "thirdTri": {
+      "title": "3º Trimestre",
+      "content": [
+      ]
+    }
+  }
+}
