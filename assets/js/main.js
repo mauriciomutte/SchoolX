@@ -303,7 +303,7 @@ function matterList(trimestre, materia) {
 
 function callJSON(m, materia, ano) {
   const require = new XMLHttpRequest()
-  require.open("GET", '/ConteudoX/' + ano + '.json', true)
+  require.open("GET", '../../' + ano + '.json', true)
   require.onload = function() {
     const matter = JSON.parse(this.responseText)
     
