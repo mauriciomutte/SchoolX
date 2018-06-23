@@ -4,173 +4,178 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>ConteudoX</title>
-	<meta name="theme-color" content="#1e1e22">
-	<meta name="mobile-web-app-capable" content="yes">
-	<link rel="stylesheet" href="/ConteudoX/assets/css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<!-- FAV ICONS -->
-	<link rel="apple-touch-icon" sizes="57x57" href="/ConteudoX/assets/img/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/ConteudoX/assets/img/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/ConteudoX/assets/img/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/ConteudoX/assets/img/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/ConteudoX/assets/img/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/ConteudoX/assets/img/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/ConteudoX/assets/img/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/ConteudoX/assets/img/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/ConteudoX/assets/img/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/ConteudoX/assets/img/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/ConteudoX/assets/img/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/ConteudoX/assets/img/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/ConteudoX/assets/img/favicon-16x16.png">
-	<link rel="manifest" href="/ConteudoX/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <title>SchoolX</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/conteudo.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icon/favicon-16x16.png">
+  <!-- Apple touch icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/icon/apple-touch-icon.png">
+  <!-- Mac icon -->
+  <link rel="mask-icon" href="../../assets/icon/safari-pinned-tab.svg" color="#1400ff">
+  <!-- MS icon -->
+  <meta name="apple-mobile-web-app-title" content="SchoolX">
+  <meta name="application-name" content="SchoolX">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#000000">
+  <!-- Add manifest -->
+  <link rel="manifest" href="../../manifest.json">
+  <!-- Add Service Work -->
+  <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('../../sw.js').then(function(registration) {
+        console.info('Service Worker registration successful with scope: ', registration.scope);
+      }).catch(function(err) {
+        console.error('Service Worker registration failed: ', err);
+      });
+    }
+  </script>
 </head>
 <body>
 	<header class="header">
 		<div class="siteTitle">
-			<img src="/ConteudoX/assets/img/icon_site.png" alt="Logo do site" class="siteTitle__image">
+			<img src="../../assets/img/icon_site.png" alt="Logo do site" class="siteTitle__image">
 			<h1 class="siteTitle__name">ConteudoX</h1>
 		</div>
 		<div class="ano">
-			<a href="/ConteudoX/primeiro" class="emAno emAno-active ano__primeiro">1º Ano</a>
-			<a href="/ConteudoX/segundo" class="emAno ano__segundo">2º Ano</a>
+			<a href="../primeiro" class="emAno emAno-active ano__primeiro">1º Ano</a>
+			<a href="../segundo" class="emAno ano__segundo">2º Ano</a>
 		</div>
 	</header>
   <main>
     <section class="menu">
       <div class="menu__content">
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/fisica.html" class="menu__materia--a">
+					<a href="../primeiro/materia/fisica.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_fis.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_fis.png" alt="">
 							<span class="menu__materia__box--name">Física</span>
 						</div>
 					</a>
 				</div>
 
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/matematica.html" class="menu__materia--a">
+					<a href="../primeiro/materia/matematica.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_mat.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_mat.png" alt="">
 							<span class="menu__materia__box--name">Matemática</span>
 						</div>
 					</a>
 				</div>
 
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/quimica.html" class="menu__materia--a">
+					<a href="../primeiro/materia/quimica.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_qui.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_qui.png" alt="">
 							<span class="menu__materia__box--name">Química</span>
 						</div>
 					</a>
 				</div>
 
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/biologia.html" class="menu__materia--a">
+					<a href="../primeiro/materia/biologia.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_bio.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_bio.png" alt="">
 							<span class="menu__materia__box--name">Biologia</span>
 						</div>
 					</a>
 				</div>
 
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/filosofia.html" class="menu__materia--a">
+					<a href="../primeiro/materia/filosofia.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_fil.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_fil.png" alt="">
 							<span class="menu__materia__box--name">Filosofia</span>
 						</div>
 					</a>
 				</div>
 
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/sociologia.html" class="menu__materia--a">
+					<a href="../primeiro/materia/sociologia.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_soc.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_soc.png" alt="">
 							<span class="menu__materia__box--name">Sociologia</span>
 						</div>
 					</a>
 				</div>
 				
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/geografia.html" class="menu__materia--a">
+					<a href="../primeiro/materia/geografia.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_geo.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_geo.png" alt="">
 							<span class="menu__materia__box--name">Geografia</span>
 						</div>
 					</a>
 				</div>
 
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/historia.html" class="menu__materia--a">
+					<a href="../primeiro/materia/historia.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_his.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_his.png" alt="">
 							<span class="menu__materia__box--name">História</span>
 						</div>
 					</a>
 				</div>
 
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/portugues.html" class="menu__materia--a">
+					<a href="../primeiro/materia/portugues.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_por.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_por.png" alt="">
 							<span class="menu__materia__box--name">Português</span>
 						</div>
 					</a>
 				</div>
 
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/literatura.html" class="menu__materia--a">
+					<a href="../primeiro/materia/literatura.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_lit.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_lit.png" alt="">
 							<span class="menu__materia__box--name">Literatura</span>
 						</div>
 					</a>
 				</div>
 
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/redacao.html" class="menu__materia--a">
+					<a href="../primeiro/materia/redacao.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_red.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_red.png" alt="">
 							<span class="menu__materia__box--name">Redação</span>
 						</div>
 					</a>
 				</div>
 
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/ingles.html" class="menu__materia--a">
+					<a href="../primeiro/materia/ingles.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_ing.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_ing.png" alt="">
 							<span class="menu__materia__box--name">Inglês</span>
 						</div>
 					</a>
 				</div>
 
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/espanhol.html" class="menu__materia--a">
+					<a href="../primeiro/materia/espanhol.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_esp.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_esp.png" alt="">
 							<span class="menu__materia__box--name">Espanhol</span>
 						</div>
 					</a>
 				</div>
 
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/arte.html" class="menu__materia--a">
+					<a href="../primeiro/materia/arte.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_art.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_art.png" alt="">
 							<span class="menu__materia__box--name">Arte</span>
 						</div>
 					</a>
 				</div>
 
 				<div class="menu__materia">
-					<a href="/ConteudoX/primeiro/materia/edfis.html" class="menu__materia--a">
+					<a href="../primeiro/materia/edfis.html" class="menu__materia--a">
 						<div class="menu__materia__box">
-							<img class="menu__materia__box--img" src="/ConteudoX/assets/img/icon_edf.png" alt="">
+							<img class="menu__materia__box--img" src="../../assets/img/icon_edf.png" alt="">
 							<span class="menu__materia__box--name">Ed. Física</span>
 						</div>
 					</a>
