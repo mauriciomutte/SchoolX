@@ -55,4 +55,8 @@ gulp.task('images', function(){
     .pipe(gulp.dest('assets/img/'))
 })
 
+gulp.task('watch', function(){
+  gulp.watch('assets/css/*.css', ['css'])
+})
+
 gulp.task('default', ['serve', 'css', 'js', 'images']) 
