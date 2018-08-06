@@ -56,7 +56,7 @@ gulp.task('images', function(){
 })
 
 gulp.task('watch', function(){
-  gulp.watch('assets/css/*.css', ['css'])
+  gulp.watch('assets/css/*.css', ['css','sw'])
 })
 
 gulp.task('default', ['serve', 'css', 'js', 'images']) 
