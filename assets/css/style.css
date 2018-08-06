@@ -279,8 +279,27 @@ body {
 .matterContent__box {
   background-color: #fff;
   margin-top: 2px;
-  padding: 2em 0;
+  padding: 0 0 1em;
   width: 264px;
+}
+
+.matterContent__ul {
+  color: #000;
+  list-style: none;
+  margin: 0 0 1em;
+  padding: 5px 1.5em 0;
+  text-align: left;
+}
+
+.matterContent__li {
+  font-size: 17px;
+  font-weight: 300;
+  padding: 10px 0 10px;
+}
+
+.matterContent__li +
+.matterContent__li {
+  border-top: 1px solid #ccc;
 }
 
 .matterContent__btn {
