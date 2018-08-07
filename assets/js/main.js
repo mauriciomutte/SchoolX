@@ -185,6 +185,24 @@ function createMatterHeader(matter) {
     matterContentBox.classList.add('matterContent__box')
     matterContent.appendChild(matterContentBox)
 
+    matterContentUl = document.createElement('ul')
+    matterContentUl.classList.add('matterContent__ul')
+    matterContentBox.appendChild(matterContentUl)
+
+    const require = new XMLHttpRequest()
+    require.open("GET", '../../conteudo/segundo.json', true)
+    require.onload = function() {
+      const matterConteudoX = JSON.parse(this.responseText)
+      matterConteudoXContent = matterConteudoX.fisica.firstTri.content.reverse()
+      for (let i = 0; i < 5; i++) {
+        matterContentLi = document.createElement('Li')
+        matterContentLi.classList.add('matterContent__li')
+        matterContentLi.innerHTML = matterConteudoXContent[i]
+        matterContentUl.appendChild(matterContentLi)
+      }
+    }
+    require.send()
+
     matterContentBtn = document.createElement('a')
     matterContentBtn.classList.add('matterContent__btn')
     matterContentBtn.style.backgroundColor = matter.color
