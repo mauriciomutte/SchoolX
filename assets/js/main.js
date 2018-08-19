@@ -190,7 +190,7 @@ function createMatterHeader(matter, matterNum) {
     matterContentBox.appendChild(matterContentUl)
 
     const require = new XMLHttpRequest()
-    require.open("GET", '../../conteudo/segundo.json', true)
+    require.open("GET", '/SchoolX/conteudo/segundo.json', true)
     require.onload = function() {
       const conteudoxJSON = JSON.parse(this.responseText)
       const conteudoxArray = [conteudoxJSON.arte, conteudoxJSON.biologia, conteudoxJSON.edf, conteudoxJSON.filosofia, conteudoxJSON.fisica, conteudoxJSON.geografia, conteudoxJSON.historia, conteudoxJSON.espanhol, conteudoxJSON.ingles, conteudoxJSON.portugues, conteudoxJSON.literatura, conteudoxJSON.matematica, conteudoxJSON.quimica, conteudoxJSON.redacao, conteudoxJSON.sociologia]
