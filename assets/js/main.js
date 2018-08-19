@@ -88,7 +88,7 @@ function createScheduleTable() {
 
 // Matter page
 
-function createMatterHeader(matter) {
+function createMatterHeader(matter, matterNum) {
   const matterSection = document.querySelector('.' + matter.initials)
 
   const matterHeader = document.createElement('div')
@@ -192,12 +192,14 @@ function createMatterHeader(matter) {
     const require = new XMLHttpRequest()
     require.open("GET", '../../conteudo/segundo.json', true)
     require.onload = function() {
-      const matterConteudoX = JSON.parse(this.responseText)
-      matterConteudoXContent = matterConteudoX.fisica.firstTri.content.reverse()
+      const conteudoxJSON = JSON.parse(this.responseText)
+      const conteudoxArray = [conteudoxJSON.arte, conteudoxJSON.biologia, conteudoxJSON.edf, conteudoxJSON.filosofia, conteudoxJSON.fisica, conteudoxJSON.geografia, conteudoxJSON.historia, conteudoxJSON.espanhol, conteudoxJSON.ingles, conteudoxJSON.portugues, conteudoxJSON.literatura, conteudoxJSON.matematica, conteudoxJSON.quimica, conteudoxJSON.redacao, conteudoxJSON.sociologia]
+      const conteudoxContent = conteudoxArray[matterNum].secondTri.content.reverse()
+      console.log(conteudoxJSON)
       for (let i = 0; i < 5; i++) {
         matterContentLi = document.createElement('Li')
         matterContentLi.classList.add('matterContent__li')
-        matterContentLi.innerHTML = matterConteudoXContent[i]
+        matterContentLi.innerHTML = conteudoxContent[i]
         matterContentUl.appendChild(matterContentLi)
       }
     }
