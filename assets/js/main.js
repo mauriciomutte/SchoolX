@@ -9,8 +9,7 @@ function createObjMatter(name, initials, teacherName, teacherLastName, color, di
     'teacherFullName': teacherName + ' ' +  teacherLastName,
     'color': color,
     'dir': dir,
-    'dirConteudox': dirConteudox,
-    'tests': []
+    'dirConteudox': dirConteudox
   }
 }
 
