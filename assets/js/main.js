@@ -195,12 +195,15 @@ function createMatterHeader(matter, matterNum) {
       const conteudoxJSON = JSON.parse(this.responseText)
       const conteudoxArray = [conteudoxJSON.arte, conteudoxJSON.biologia, conteudoxJSON.edf, conteudoxJSON.filosofia, conteudoxJSON.fisica, conteudoxJSON.geografia, conteudoxJSON.historia, conteudoxJSON.espanhol, conteudoxJSON.ingles, conteudoxJSON.portugues, conteudoxJSON.literatura, conteudoxJSON.matematica, conteudoxJSON.quimica, conteudoxJSON.redacao, conteudoxJSON.sociologia]
       const conteudoxContent = conteudoxArray[matterNum].secondTri.content.reverse()
-      console.log(conteudoxJSON)
       for (let i = 0; i < 5; i++) {
-        matterContentLi = document.createElement('Li')
-        matterContentLi.classList.add('matterContent__li')
-        matterContentLi.innerHTML = conteudoxContent[i]
-        matterContentUl.appendChild(matterContentLi)
+        if (conteudoxContent[i] ==! undefined) {
+          matterContentLi = document.createElement('Li')
+          matterContentLi.classList.add('matterContent__li')
+          matterContentLi.innerHTML = conteudoxContent[i]
+          matterContentUl.appendChild(matterContentLi)
+        } else {
+          console.log('Conteúdo: em falta')
+        }
       }
     }
     require.send()
