@@ -16,9 +16,9 @@ function createObjMatter(name, initials, teacherName, teacherLastName, color, di
 const arte = createObjMatter('Arte', 'Arte', 'Rosane', 'Conti Bones', '#8584BD', 'materia/arte.html', 'arte')
 const biologia = createObjMatter('Biologia', 'BIO', 'Rafaela', 'Mônego', '#9932CC', 'materia/biologia.html', 'biologia')
 const educacaoFisica = createObjMatter('Educação Física', 'EF', 'Eduardo', 'Machado', '#279AD0', 'materia/educacaoFisica.html', 'edfis')
-const filosofia = createObjMatter('Filosofia', 'FIL', 'William', 'Vasconcelos', '#BB8940', 'materia/filosofia.html', 'filosofia')
+const filosofia = createObjMatter('Filosofia', 'FIL', 'Alexandre', 'Barbosa', '#BB8940', 'materia/filosofia.html', 'filosofia')
 const fisica = createObjMatter('Física', 'Física', 'Tatiane', 'Alves', '#3B8B42', 'materia/fisica.html', 'fisica')
-const geografia = createObjMatter('Geografia', 'GEO', 'Miosés', 'Ferreira', '#37704D', 'materia/geografia.html', 'geografia')
+const geografia = createObjMatter('Geografia', 'GEO', 'Fábio', 'Lopes', '#37704D', 'materia/geografia.html', 'geografia')
 const historia = createObjMatter('História', 'HIS', 'Renata', 'Rocha', '#6398CE', 'materia/historia.html', 'historia')
 const linguaEspanhola = createObjMatter('Língua Espanhola', 'LE', 'Cristiane', 'Carvalho', '#4985C4', 'materia/linguaEspanhola.html', 'espanhol')
 const linguaInglesa = createObjMatter('Língua Inglesa', 'LI', 'Marcos', 'Oliveira', '#927963', 'materia/linguaInglesa.html', 'ingles')
@@ -27,7 +27,7 @@ const literatura = createObjMatter('Literatura', 'LIT', 'Marlise', 'Fraga', '#EA
 const matematica = createObjMatter('Matemática', 'MAT', 'Márcio', 'Batista', '#3AB251', 'materia/matematica.html', 'matematica')
 const quimica = createObjMatter('Química', 'QUI', 'Valéria', 'Correa', '#E4893A', 'materia/quimica.html', 'quimica')
 const redacao = createObjMatter('Redação', 'RED', 'Marlise', 'Fraga', '#C75753', 'materia/redacao.html', 'redacao')
-const sociologia = createObjMatter('Sociologia', 'SOC', 'William', 'Vasconcelos', '#D8534E', 'materia/sociologia.html', 'sociologia')
+const sociologia = createObjMatter('Sociologia', 'SOC', 'Alexandre', 'Barbosa', '#D8534E', 'materia/sociologia.html', 'sociologia')
 
 // Create schedule
 
