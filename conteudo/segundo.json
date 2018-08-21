@@ -9,18 +9,19 @@
         "Impulso (dinâmica)",
         "Quantidade de movimento (dinâmica)",
         "Dilatação de sólidos (linear, superficial e volumétrica)",
-        "Temperatura (tremometria)",
-        "Escalas termométricas (tremometria)",
-        "Conversões (tremometria)",
-        "Calor (calorimetria)",
-        "Trocas de calor (calorimetria)",
-        "Propagação de calor (calorimetria)",
-        "Capacidade térmica (calorimetria)"
+        "Temperatura (termometria)",
+        "Escalas termométricas (termometria)",
+        "Conversões (termometria)"
       ]
     },
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
+        "Calor (calorimetria_",
+        "Trocas de Calor (calorimetria_",
+        "Capacidade Térmica (calorimetria_",
+        "Propagação do Calor (calorimetria_",
+        "Transformações gasosas"
       ]
     },
     "thirdTri": {
@@ -41,6 +42,10 @@
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
+        "Matrizes"
+        "Determinantes",
+        "Regra de sarrus (determinantes)",
+        "Teorema de Laplace (determinantes)"
       ]
     },
     "thirdTri": {
@@ -53,7 +58,7 @@
     "firstTri": {
       "title": "1º Trimestre",
       "content": [
-        "Concentração de soluções",
+        "Concentração de soluções (comum, molar, densidade, título, íons e relações entre concentrações)",
         "Diluição de soluções",
         "Mistura de soluções",
         "Propriedades coligativas"
@@ -62,6 +67,10 @@
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
+        "Cinética química",
+        "Termoquímica",
+        "Entalpia de ligação (termoquímica)",
+        "Lei de Hess (termoquímica)"
       ]
     },
     "thirdTri": {
@@ -74,6 +83,7 @@
     "firstTri": {
       "title": "1º Trimestre",
       "content": [
+        "Bactérias  Gram positivas e Gram negativas",
         "Taxonomia",
         "Nomenclatura científica",
         "Reinos da natureza"
@@ -82,6 +92,8 @@
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
+        "Grupo Plantae",
+        "Filogenia animal"
       ]
     },
     "thirdTri": {
@@ -94,11 +106,19 @@
     "firstTri": {
       "title": "1º Trimestre",
       "content": [
+        "Democracia",
+        "Ideias políticas",
+        "Ideias democráticas",
+        "Poder judiciário"      
       ]
     },
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
+        "Ética aplicada",
+        "Bioética",
+        "Ética ambiental",
+        "Ética dos negócios"
       ]
     },
     "thirdTri": {
@@ -111,11 +131,18 @@
     "firstTri": {
       "title": "1º Trimestre",
       "content": [
+        "Sociologia da comunicação",
+        "Surgimento da Sociologia no Brasil",
+        "Conceitos sociológicos de Comte, Durkheim, Weber e Marx"
       ]
     },
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
+        "Identidade e subjetividade",
+        "Identidade social",
+        "Identidade narrativa",
+        "Idendidade no mundo globalizado"
       ]
     },
     "thirdTri": {
@@ -128,13 +155,19 @@
     "firstTri": {
       "title": "1º Trimestre",
       "content": [
-        "América do Norte",
+        "Configuração territorial (América do Norte)",
+        "Relevo e hidrografia (América do Norte)",
+        "Clima e vegetação (América do Norte)",
+        "População (América do Norte)",
+        "Canadá: um país grande, mas pouco ocupado (América do Norte)",
+        "México: contrastes sociais e migrações (América do Norte)",
         "América Central"
       ]
     },
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
+        "América do Sul"
       ]
     },
     "thirdTri": {
@@ -152,6 +185,7 @@
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
+        "Primeira guerra mundial"
       ]
     },
     "thirdTri": {
@@ -165,12 +199,17 @@
       "title": "1º Trimestre",
       "content": [
         "Interpretação de textos",
-        "Pronomes (pessoais, possessivos e demonstrativos)"
+        "Pronomes pessoais",
+        "Pronomes possessivos",
+        "Pronomes demonstrativos"
       ]
     },
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
+        "Artigo (definido e indefinido)",
+        "Numeral (cardinal, ordinal, multiplicativo e fracionário)",
+        "Interjeição"
       ]
     },
     "thirdTri": {
@@ -183,12 +222,15 @@
     "firstTri": {
       "title": "1º Trimestre",
       "content": [
-        "Gerações romanticas"
+        "Primeira geração romântica (romantismo)",
+        "Segunda geração romântica (romantismo)",
+        "Terceira geração romântica (romantismo)"
       ]
     },
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
+        "Realismo"
       ]
     },
     "thirdTri": {
@@ -228,6 +270,7 @@
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
+        "Verb tenses (present, past and future)"
       ]
     },
     "thirdTri": {
@@ -240,14 +283,19 @@
     "firstTri": {
       "title": "1º Trimestre",
       "content": [
+        "Compreensão textual",
         "Elementos de coesão",
-        "Presente do indicativo",
-        "Compreensão textual"
+        "Presente do indicativo (regulares e irregulares)",
+        "Marcadores textuais"
       ]
     },
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
+        "Futuro perfeito",
+        "futuro imperfeito",
+        "Futuro simples",
+        "Conjunções"
       ]
     },
     "thirdTri": {
@@ -267,6 +315,8 @@
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
+        "Semana de Arte Moderna de 1922",
+        "Anita Malfatti"
       ]
     },
     "thirdTri": {
@@ -287,6 +337,8 @@
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
+        "Movimentos do corpo",
+        "Basquete"
       ]
     },
     "thirdTri": {
