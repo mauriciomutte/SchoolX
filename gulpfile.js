@@ -14,7 +14,7 @@ gulp.task('sw', function(callback) {
   var rootDir = './';
 
   swPrecache.write(path.join(rootDir, 'sw.js'), {
-    staticFileGlobs: [rootDir + 'manifest.json', 'assets/js/main.js','assets/img/*.png', 'assets/img/*.jpg', 'assets/css/style.css', 'index.html', 'materia/*.html', 'agenda/*.html'],
+    staticFileGlobs: [rootDir + 'manifest.json', 'assets/js/main.js','assets/img/*.png', 'assets/img/*.jpg', 'assets/css/style.css', 'index.html', 'materia/*.html', 'agenda/*.html', 'conteudo/*.html'],
     stripPrefix: rootDir
   }, callback);
 });
