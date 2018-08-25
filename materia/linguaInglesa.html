@@ -53,7 +53,13 @@
   <!-- </matterHeader> -->
   <script src="../assets/js/main.js"></script>
   <script>
-    createMatterHeader(linguaInglesa, 8)
+    const require = new XMLHttpRequest()
+    require.open("GET", '../../matter.json', true)
+    require.onload = function() {
+      const matterJSON = JSON.parse(this.responseText)
+      createMatterHeader(matterJSON.linguaInglesa, 8)
+    }
+    require.send()
   </script>
 </body>
 </html>

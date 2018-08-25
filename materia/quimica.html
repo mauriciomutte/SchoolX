@@ -53,7 +53,13 @@
   <!-- </matterHeader> -->
   <script src="../assets/js/main.js"></script>
   <script>
-    createMatterHeader(quimica, 12)
+    const require = new XMLHttpRequest()
+    require.open("GET", '../../matter.json', true)
+    require.onload = function() {
+      const matterJSON = JSON.parse(this.responseText)
+      createMatterHeader(matterJSON.quimica, 12)
+    }
+    require.send()
   </script>
 </body>
 </html>
