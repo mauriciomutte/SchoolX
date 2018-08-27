@@ -1,0 +1,139 @@
+{
+  "arte": {
+    "name": "Arte",
+    "initials": "Arte",
+    "teacherName": "Rosane",
+    "teacherLastName": "Conti Bones",
+    "color": "#8584BD",
+    "dir": "materia/arte.html",
+    "dirConteudox": "arte"
+  },
+  "biologia": {
+    "name": "Biologia",
+    "initials": "BIO",
+    "teacherName": "Rafaela",
+    "teacherLastName": "Mônego",
+    "color": "#9932CC",
+    "dir": "materia/biologia.html",
+    "dirConteudox": "biologia"
+  },
+  "educacaoFisica": {
+    "name": "Educação Física",
+    "initials": "EF",
+    "teacherName": "Eduardo",
+    "teacherLastName": "Machado",
+    "color": "#279AD0",
+    "dir": "materia/educacaoFisica.html",
+    "dirConteudox": "edfis"
+  },
+  "filosofia": {
+    "name": "Filosofia",
+    "initials": "FIL",
+    "teacherName": "Alexandre",
+    "teacherLastName": "Barbosa",
+    "color": "#BB8940",
+    "dir": "materia/filosofia.html",
+    "dirConteudox": "filosofia"
+  },
+  "fisica": {
+    "name": "Física",
+    "initials": "Física",
+    "teacherName": "Tatiane",
+    "teacherLastName": "Alves",
+    "color": "#3B8B42",
+    "dir": "materia/fisica.html",
+    "dirConteudox": "fisica"
+  },
+  "geografia": {
+    "name": "Geografia",
+    "initials": "GEO",
+    "teacherName": "Fábio",
+    "teacherLastName": "Lopes",
+    "color": "#37704D",
+    "dir": "materia/geografia.html",
+    "dirConteudox": "geografia"
+  },
+  "historia": {
+    "name": "História",
+    "initials": "HIS",
+    "teacherName": "Renata",
+    "teacherLastName": "Rocha",
+    "color": "#6398CE",
+    "dir": "materia/historia.html",
+    "dirConteudox": "historia"
+  },
+  "linguaEspanhola": {
+    "name": "Língua Espanhola",
+    "initials": "LE",
+    "teacherName": "Cristiane",
+    "teacherLastName": "Carvalho",
+    "color": "#4985C4",
+    "dir": "materia/linguaEspanhola.html",
+    "dirConteudox": "espanhol"
+  },
+  "linguaInglesa": {
+    "name": "Língua Inglesa",
+    "initials": "LI",
+    "teacherName": "Marcos",
+    "teacherLastName": "Oliveira",
+    "color": "#927963",
+    "dir": "materia/linguaInglesa.html",
+    "dirConteudox": "ingles"
+  },
+  "linguaPortuguesa": {
+    "name": "Língua Portuguesa",
+    "initials": "LP",
+    "teacherName": "Marlise",
+    "teacherLastName": "Fraga",
+    "color": "#61B5D9",
+    "dir": "materia/linguaPortuguesa.html",
+    "dirConteudox": "portugues"
+  },
+  "literatura": {
+    "name": "Literatura",
+    "initials": "LIT",
+    "teacherName": "Marlise",
+    "teacherLastName": "Fraga",
+    "color": "#EABB23",
+    "dir": "materia/literatura.html",
+    "dirConteudox": "literatura"
+  },
+  "matematica": {
+    "name": "Matemática",
+    "initials": "MAT",
+    "teacherName": "Márcio",
+    "teacherLastName": "Batista",
+    "color": "#3AB251",
+    "dir": "materia/matematica.html",
+    "dirConteudox": "matematica"
+  },
+  "quimica": {
+    "name": "Química",
+    "initials": "QUI",
+    "teacherName": "Valéria",
+    "teacherLastName": "Correa",
+    "color": "#E4893A",
+    "dir": "materia/quimica.html",
+    "dirConteudox": "quimica"
+  },
+  "redacao": {
+    "name": "Redação",
+    "initials": "RED",
+    "teacherName": "Marlise",
+    "teacherLastName": "Fraga",
+    "color": "#C75753",
+    "dir": "materia/redacao.html",
+    "dirConteudox": "redacao"
+  },
+  "sociologia": {
+    "name": "Sociologia",
+    "initials": "SOC",
+    "teacherName": "Alexandre",
+    "teacherLastName": "Barbosa",
+    "color": "#E4893A",
+    "dir": "materia/sociologia.html",
+    "dirConteudox": "sociologia"
+  }
+  
+}
+

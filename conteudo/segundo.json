@@ -42,7 +42,7 @@
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
-        "Matrizes"
+        "Matrizes",
         "Determinantes",
         "Regra de sarrus (determinantes)",
         "Teorema de Laplace (determinantes)"
