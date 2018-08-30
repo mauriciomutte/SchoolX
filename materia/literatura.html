@@ -54,7 +54,7 @@
   <script src="../assets/js/main.js"></script>
   <script>
     const require = new XMLHttpRequest()
-    require.open("GET", '../../matter.json', true)
+    require.open("GET", '/SchoolX/matter.json', true)
     require.onload = function() {
       const matterJSON = JSON.parse(this.responseText)
       createMatterHeader(matterJSON.literatura, 10)
