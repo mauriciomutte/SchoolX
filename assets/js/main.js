@@ -152,41 +152,74 @@ function createMatterHeader(matter, matterNum) {
 
 // createTestTable
 function createTestTable() {
-  const testPage = document.querySelector('.tests')
+  const require = new XMLHttpRequest()
+  require.open("GET", '/tests.json', true)
+  require.onload = function() {
+    const tests = JSON.parse(this.responseText)
 
-  const testContent = document.createElement('div')
-  testContent.classList.add('test__content')
-  testContent.style.backgroundColor = '#3B8B42'
-  testPage.appendChild(testContent)
+    const require = new XMLHttpRequest()
+    require.open("GET", '/matter.json', true)
+    require.onload = function() {
+      const matter = JSON.parse(this.responseText)
+      const test = [
+        matter.fisica, 
+        matter.matematica, 
+        matter.quimica, 
+        matter.biologia, 
+        matter.filosofia,
+        matter.sociologia,
+        matter.geografia, 
+        matter.historia, 
+        matter.portugues, 
+        matter.literatura, 
+        matter.redacao, 
+        matter.ingles, 
+        matter.espanhol,
+        matter.arte, 
+        matter.edf
+      ]
 
-  const testDate = document.createElement('div')
-  testDate.classList.add('test__date')
-  testContent.appendChild(testDate)
-
-  const testDateDay = document.createElement('span')
-  testDateDay.classList.add('test__date__day')
-  testDateDay.innerHTML = '31'
-  testDate.appendChild(testDateDay)
-
-  const testDateMonth = document.createElement('span')
-  testDateMonth.classList.add('test__date__month')
-  testDateMonth.innerHTML = 'AGO'
-  testDate.appendChild(testDateMonth)
-
-  const testInfo = document.createElement('div')
-  testInfo.classList.add('test__info')
-  testContent.appendChild(testInfo)
-
-  const testMatterName = document.createElement('h3')
-  testMatterName.classList.add('test__matterName')
-  testMatterName.innerHTML = 'Física'
-  testInfo.appendChild(testMatterName)
-
-  const testMatterTest = document.createElement('p')
-  testMatterTest.classList.add('test__matterTest')
-  testMatterTest.innerHTML = 'Avaliação Parcial II'
-  testInfo.appendChild(testMatterTest)
-
+      for(let i = 0; i < tests.length; i++) {
+        const testPage = document.querySelector('.tests')
+  
+        const testContent = document.createElement('div')
+        testContent.classList.add('test__content')
+        testContent.style.backgroundColor = test[tests[i].matter].color
+        testPage.appendChild(testContent)
+      
+        const testDate = document.createElement('div')
+        testDate.classList.add('test__date')
+        testContent.appendChild(testDate)
+      
+        const testDateDay = document.createElement('span')
+        testDateDay.classList.add('test__date__day')
+        testDateDay.innerHTML = tests[i].day
+        testDate.appendChild(testDateDay)
+      
+        const testDateMonth = document.createElement('span')
+        testDateMonth.classList.add('test__date__month')
+        testDateMonth.innerHTML = tests[i].month.toUpperCase()
+        testDate.appendChild(testDateMonth)
+      
+        const testInfo = document.createElement('div')
+        testInfo.classList.add('test__info')
+        testContent.appendChild(testInfo)
+      
+        const testMatterName = document.createElement('a')
+        testMatterName.classList.add('test__matterName')
+        testMatterName.innerHTML = test[tests[i].matter].name
+        testMatterName.href = '../' + test[tests[i].matter].dir
+        testInfo.appendChild(testMatterName)
+      
+        const testMatterTest = document.createElement('p')
+        testMatterTest.classList.add('test__matterTest')
+        testMatterTest.innerHTML = tests[i].test
+        testInfo.appendChild(testMatterTest)
+      }
+    }
+    require.send()
+  }
+  require.send()
 }
 
 //ConteudoX
@@ -219,10 +252,23 @@ function callJSON(m, materia, ano) {
   require.open("GET", '/conteudo/' + ano + '.json', true)
   require.onload = function() {
     const matter = JSON.parse(this.responseText)
-    
-    const test = [matter.fisica, matter.matematica, matter.quimica, matter.biologia, matter.filosofia, matter.sociologia,
-    matter.geografia, matter.historia, matter.portugues, matter.literatura, matter.redacao, matter.ingles, matter.espanhol,
-    matter.arte, matter.edf]
+    const test = [
+      matter.fisica, 
+      matter.matematica, 
+      matter.quimica, 
+      matter.biologia, 
+      matter.filosofia,
+      matter.sociologia,
+      matter.geografia, 
+      matter.historia, 
+      matter.portugues, 
+      matter.literatura, 
+      matter.redacao, 
+      matter.ingles, 
+      matter.espanhol,
+      matter.arte, 
+      matter.edf
+    ]
 
     matterList(test[m].firstTri, materia)
     matterList(test[m].secondTri, materia)
