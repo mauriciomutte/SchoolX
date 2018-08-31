@@ -4,7 +4,7 @@
 
 function createScheduleTable() {
   const require = new XMLHttpRequest()
-  require.open("GET", '/SchoolX/matter.json', true)
+  require.open("GET", '/matter.json', true)
   require.onload = function() {
     const matterJSON = JSON.parse(this.responseText)
     console.log(matterJSON)
@@ -125,7 +125,7 @@ function createMatterHeader(matter, matterNum) {
     matterContentBox.appendChild(matterContentUl)
 
     const require = new XMLHttpRequest()
-    require.open("GET", '/SchoolX/conteudo/segundo.json', true)
+    require.open("GET", '/conteudo/segundo.json', true)
     require.onload = function() {
       const conteudoxJSON = JSON.parse(this.responseText)
       const conteudoxArray = [conteudoxJSON.arte, conteudoxJSON.biologia, conteudoxJSON.edf, conteudoxJSON.filosofia, conteudoxJSON.fisica, conteudoxJSON.geografia, conteudoxJSON.historia, conteudoxJSON.espanhol, conteudoxJSON.ingles, conteudoxJSON.portugues, conteudoxJSON.literatura, conteudoxJSON.matematica, conteudoxJSON.quimica, conteudoxJSON.redacao, conteudoxJSON.sociologia]
@@ -151,35 +151,7 @@ function createMatterHeader(matter, matterNum) {
 }
 
 // createTestTable
-function createTestTable(matter, date, type) {
-  matter.tests.push({
-    'date': date,
-    'type': type
-  })
 
-  const testTable = document.querySelector('.tests__table')
-
-  if (testTable !== null) {
-    const tr = document.createElement('tr')
-    tr.classList.add('tests__table__tr')
-    testTable.appendChild(tr)
-  
-    const testDate = document.createElement('td')
-    testDate.classList.add('tests__table__td')
-    testDate.innerHTML = date
-    tr.appendChild(testDate)
-  
-    const testMatter = document.createElement('td')
-    testMatter.classList.add('tests__table__td')
-    testMatter.innerHTML = matter.name
-    tr.appendChild(testMatter)
-  
-    const testType = document.createElement('td')
-    testType.classList.add('tests__table__td')
-    testType.innerHTML = type
-    tr.appendChild(testType)
-  }
-}
 
 //ConteudoX
 function matterList(trimestre, materia) {
@@ -208,7 +180,7 @@ function matterList(trimestre, materia) {
 
 function callJSON(m, materia, ano) {
   const require = new XMLHttpRequest()
-  require.open("GET", '/SchoolX/conteudo/' + ano + '.json', true)
+  require.open("GET", '/conteudo/' + ano + '.json', true)
   require.onload = function() {
     const matter = JSON.parse(this.responseText)
     
