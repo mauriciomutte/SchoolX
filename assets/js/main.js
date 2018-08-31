@@ -151,7 +151,44 @@ function createMatterHeader(matter, matterNum) {
 }
 
 // createTestTable
+function createTestTable() {
+  const testPage = document.querySelector('.tests')
 
+  const testContent = document.createElement('div')
+  testContent.classList.add('test__content')
+  testContent.style.backgroundColor = '#3B8B42'
+  testPage.appendChild(testContent)
+
+  const testDate = document.createElement('div')
+  testDate.classList.add('test__date')
+  testContent.appendChild(testDate)
+
+  const testDateDay = document.createElement('span')
+  testDateDay.classList.add('test__date__day')
+  testDateDay.innerHTML = '31'
+  testDate.appendChild(testDateDay)
+
+  const testDateMonth = document.createElement('span')
+  testDateMonth.classList.add('test__date__month')
+  testDateMonth.innerHTML = 'AGO'
+  testDate.appendChild(testDateMonth)
+
+  const testInfo = document.createElement('div')
+  testInfo.classList.add('test__info')
+  testContent.appendChild(testInfo)
+
+  const testMatterName = document.createElement('h3')
+  testMatterName.classList.add('test__matterName')
+  testMatterName.innerHTML = 'Física'
+  testInfo.appendChild(testMatterName)
+
+  const testMatterTest = document.createElement('p')
+  testMatterTest.classList.add('test__matterTest')
+  testMatterTest.innerHTML = 'Avaliação Parcial II'
+  testInfo.appendChild(testMatterTest)
+
+}
+createTestTable()
 
 //ConteudoX
 function matterList(trimestre, materia) {

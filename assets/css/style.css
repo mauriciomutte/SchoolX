@@ -125,7 +125,83 @@ a:visited {
 }
 
 /* TESTS */
+.tests {
+  margin: 0 0 3em;
+  padding: 6em 3px;
+}
 
+.test__h2 {
+  background-color: crimson;
+  color: #fff;
+  display: block;
+  font-size: 25px;
+  letter-spacing: 8px;
+  margin: auto;
+  max-width: 700px;
+  padding: 10px 0 15px;
+  text-align: center;
+}
+
+.test__content {
+  border-left: 4px solid rgba(0, 0, 0, .2);
+  border-radius: 3px;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 450px;
+  padding: 5px 0 4px;
+}
+
+.test__content +
+.test__content {
+  margin-top: 1em;
+}
+
+.test__date,
+.test__info {
+  display: inline-block;
+}
+
+.test__date {
+  border-right: 1px solid #ccc;
+  font-size: 22px;
+  font-weight: bolder;
+  margin: 5px 0;
+  padding: 5px 15px;
+  vertical-align: top;
+}
+
+.test__date__day,
+.test__date__month {
+  display: block;
+  text-align: center;
+}
+
+.test__date__day {font-size: 28px;}
+
+.test__date__month {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.test__info {
+  padding: 12px 25px;
+}
+
+.test__matterName,
+.test__matterTest {
+  margin: 0;
+  padding: 0;
+}
+
+.test__matterName {
+  font-size: 22px;
+}
+
+.test__matterTest {
+  font-size: 17px;
+  font-weight: lighter;
+}
 
 /* LEITURAS */
 .leituras {
