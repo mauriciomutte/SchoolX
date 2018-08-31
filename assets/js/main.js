@@ -162,21 +162,21 @@ function createTestTable() {
     require.onload = function() {
       const matter = JSON.parse(this.responseText)
       const test = [
-        matter.fisica, 
-        matter.matematica, 
-        matter.quimica, 
+        matter.arte, 
         matter.biologia, 
+        matter.educacaoFisica,
         matter.filosofia,
-        matter.sociologia,
+        matter.fisica, 
         matter.geografia, 
         matter.historia, 
-        matter.portugues, 
+        matter.linguaEspanhola,
+        matter.linguaInglesa, 
+        matter.linguaPortuguesa, 
         matter.literatura, 
+        matter.matematica, 
+        matter.quimica, 
         matter.redacao, 
-        matter.ingles, 
-        matter.espanhol,
-        matter.arte, 
-        matter.edf
+        matter.sociologia
       ]
 
       for(let i = 0; i < tests.length; i++) {
@@ -253,21 +253,21 @@ function callJSON(m, materia, ano) {
   require.onload = function() {
     const matter = JSON.parse(this.responseText)
     const test = [
-      matter.fisica, 
-      matter.matematica, 
-      matter.quimica, 
+      matter.arte, 
       matter.biologia, 
+      matter.edf,
       matter.filosofia,
-      matter.sociologia,
+      matter.fisica, 
       matter.geografia, 
       matter.historia, 
+      matter.espanhol,
+      matter.ingles, 
       matter.portugues, 
       matter.literatura, 
+      matter.matematica, 
+      matter.quimica, 
       matter.redacao, 
-      matter.ingles, 
-      matter.espanhol,
-      matter.arte, 
-      matter.edf
+      matter.sociologia
     ]
 
     matterList(test[m].firstTri, materia)
