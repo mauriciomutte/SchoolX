@@ -8,6 +8,14 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+a,
+a:hover,
+a:link,
+a:active,
+a:visited {
+  outline: none;
+}
+
 /* HEADER */
 
 .header {
