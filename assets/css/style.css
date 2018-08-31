@@ -195,7 +195,10 @@ a:visited {
 }
 
 .test__matterName {
-  font-size: 22px;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .test__matterTest {
