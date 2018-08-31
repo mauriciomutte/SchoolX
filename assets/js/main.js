@@ -188,7 +188,6 @@ function createTestTable() {
   testInfo.appendChild(testMatterTest)
 
 }
-createTestTable()
 
 //ConteudoX
 function matterList(trimestre, materia) {
