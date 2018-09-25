@@ -6,6 +6,12 @@
     "matter": 10
   },
   {
+    "day": 1,
+    "month": "Out",
+    "test": "Avaliação Parcial 1",
+    "matter": 7
+  },
+  {
     "day": 3,
     "month": "Out",
     "test": "Leitura: Eu sou Malala (resenha)",
@@ -36,6 +42,12 @@
     "matter": 9
   },
   {
+    "day": 29,
+    "month": "Out",
+    "test": "Avaliação Parcial 2",
+    "matter": 7
+  },
+  {
     "day": 12,
     "month": "Nov",
     "test": "Avaliação Trimestral",
@@ -52,6 +64,12 @@
     "month": "Nov",
     "test": "Avaliação Trimestral",
     "matter": 9
+  },
+  {
+    "day": 19,
+    "month": "Out",
+    "test": "Avaliação Trimestral",
+    "matter": 7
   },
   {
     "day": 21,
