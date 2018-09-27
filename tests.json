@@ -5,14 +5,19 @@
     "matter": 7
   },
   {
+    "date": "October 29",
+    "test": "Avaliação Parcial 2",
+    "matter": 7
+  },
+  {
+    "date": "October 19",
+    "test": "Avaliação Trimestral",
+    "matter": 7
+  },
+  {
     "date": "October 3",
     "test": "Leitura: Eu sou Malala (resenha)",
     "matter": 9
-  },
-  {
-    "date": "October 11",
-    "test": "Avaliação Parcial 1",
-    "matter": 12
   },
   {
     "date": "October 17",
@@ -21,18 +26,43 @@
   },
   {
     "date": "October 24",
-    "test": "Avaliação Parcial 2",
-    "matter": 10
-  },
-  {
-    "date": "October 24",
     "test": "Leitura: O Conde de Monte Cristo",
     "matter": 9
   },
   {
-    "date": "October 29",
+    "date": "November 14",
+    "test": "Avaliação Trimestral",
+    "matter": 9
+  },
+  {
+    "date": "November 21",
+    "test": "Leitura: O Filho de Mil Homens",
+    "matter": 9
+  },
+  {
+    "date": "October 24",
     "test": "Avaliação Parcial 2",
-    "matter": 7
+    "matter": 10
+  },
+  {
+    "date": "November 21",
+    "test": "Avaliação Trimestral",
+    "matter": 10
+  },
+  {
+    "date": "October 11",
+    "test": "Avaliação Parcial 1",
+    "matter": 12
+  },
+  {
+    "date": "November 22",
+    "test": "Avaliação Parcial 2",
+    "matter": 12
+  },
+  {
+    "date": "November 29",
+    "test": "Avaliação Trimestral",
+    "matter": 12
   },
   {
     "date": "November 12",
@@ -43,35 +73,5 @@
     "date": "November 5",
     "test": "Redações",
     "matter": 13
-  },
-  {
-    "date": "November 14",
-    "test": "Avaliação Trimestral",
-    "matter": 9
-  },
-  {
-    "date": "October 19",
-    "test": "Avaliação Trimestral",
-    "matter": 7
-  },
-  {
-    "date": "November 21",
-    "test": "Avaliação Trimestral",
-    "matter": 10
-  },
-  {
-    "date": "November 22",
-    "test": "Avaliação Parcial 2",
-    "matter": 12
-  },
-  {
-    "date": "November 21",
-    "test": "Leitura: O Filho de Mil Homens",
-    "matter": 9
-  },
-  {
-    "date": "November 29",
-    "test": "Avaliação Trimestral",
-    "matter": 12
   }
 ]
