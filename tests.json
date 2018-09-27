@@ -1,97 +1,76 @@
 [
   {
-    "day": 26,
-    "month": "Set",
-    "test": "Leitura: O Cortiço",
-    "matter": 10
-  },
-  {
-    "day": 1,
-    "month": "Out",
+    "date": "October 1",
     "test": "Avaliação Parcial 1",
     "matter": 7
   },
   {
-    "day": 3,
-    "month": "Out",
+    "date": "October 3",
     "test": "Leitura: Eu sou Malala (resenha)",
     "matter": 9
   },
   {
-    "day": 11,
-    "month": "Out",
+    "date": "October 11",
     "test": "Avaliação Parcial 1",
     "matter": 12
   },
   {
-    "day": 17,
-    "month": "Out",
+    "date": "October 17",
     "test": "Avaliação Parcial 2",
     "matter": 9
   },
   {
-    "day": 24,
-    "month": "Out",
+    "date": "October 24",
     "test": "Avaliação Parcial 2",
     "matter": 10
   },
   {
-    "day": 24,
-    "month": "Out",
+    "date": "October 24",
     "test": "Leitura: O Conde de Monte Cristo",
     "matter": 9
   },
   {
-    "day": 29,
-    "month": "Out",
+    "date": "October 29",
     "test": "Avaliação Parcial 2",
     "matter": 7
   },
   {
-    "day": 12,
-    "month": "Nov",
+    "date": "November 12",
     "test": "Avaliação Trimestral",
     "matter": 13
   },
   {
-    "day": 5,
-    "month": "Nov",
+    "date": "November 5",
     "test": "Redações",
     "matter": 13
   },
   {
-    "day": 14,
-    "month": "Nov",
+    "date": "November 14",
     "test": "Avaliação Trimestral",
     "matter": 9
   },
   {
-    "day": 19,
-    "month": "Out",
+    "date": "October 19",
     "test": "Avaliação Trimestral",
     "matter": 7
   },
   {
-    "day": 21,
-    "month": "Nov",
+    "date": "November 21",
     "test": "Avaliação Trimestral",
     "matter": 10
   },
   {
-    "day": 22,
-    "month": "Nov",
+    "date": "November 22",
     "test": "Avaliação Parcial 2",
     "matter": 12
   },
   {
-    "day": 21,
-    "month": "Nov",
+    "date": "November 21",
     "test": "Leitura: O Filho de Mil Homens",
     "matter": 9
   },
   {
-    "day": 29,
-    "month": "Nov",
+    "date": "November 29",
     "test": "Avaliação Trimestral",
     "matter": 12
   }
