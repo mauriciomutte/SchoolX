@@ -195,6 +195,8 @@ function createTestTable() {
       ]
 
       for(let i = 0; i < tests.length; i++) {
+        const dateNow = new Date()
+        const dateToday = new Date(2018, dateNow.getMonth(),dateNow.getDate())
         const date = new Date(tests[i].date + ', 2018')
         const dateMonth = date.getMonth()
         let dateDay = date.getDate()
@@ -204,41 +206,43 @@ function createTestTable() {
           dateDay = '0' + dateDay
         }
 
-        const testPage = document.querySelector('.tests')
+        if (date >= dateToday) {
+          const testPage = document.querySelector('.tests')
   
-        const testContent = document.createElement('div')
-        testContent.classList.add('test__content')
-        testContent.style.backgroundColor = test[tests[i].matter].color
-        testPage.appendChild(testContent)
-      
-        const testDate = document.createElement('div')
-        testDate.classList.add('test__date')
-        testContent.appendChild(testDate)
-      
-        const testDateDay = document.createElement('span')
-        testDateDay.classList.add('test__date__day')
-        testDateDay.innerHTML = dateDay
-        testDate.appendChild(testDateDay)
-      
-        const testDateMonth = document.createElement('span')
-        testDateMonth.classList.add('test__date__month')
-        testDateMonth.innerHTML = months[dateMonth].toUpperCase()
-        testDate.appendChild(testDateMonth)
-      
-        const testInfo = document.createElement('div')
-        testInfo.classList.add('test__info')
-        testContent.appendChild(testInfo)
-      
-        const testMatterName = document.createElement('a')
-        testMatterName.classList.add('test__matterName')
-        testMatterName.innerHTML = test[tests[i].matter].name
-        testMatterName.href = '../' + test[tests[i].matter].dir
-        testInfo.appendChild(testMatterName)
-      
-        const testMatterTest = document.createElement('p')
-        testMatterTest.classList.add('test__matterTest')
-        testMatterTest.innerHTML = tests[i].test
-        testInfo.appendChild(testMatterTest)
+          const testContent = document.createElement('div')
+          testContent.classList.add('test__content')
+          testContent.style.backgroundColor = test[tests[i].matter].color
+          testPage.appendChild(testContent)
+        
+          const testDate = document.createElement('div')
+          testDate.classList.add('test__date')
+          testContent.appendChild(testDate)
+        
+          const testDateDay = document.createElement('span')
+          testDateDay.classList.add('test__date__day')
+          testDateDay.innerHTML = dateDay
+          testDate.appendChild(testDateDay)
+        
+          const testDateMonth = document.createElement('span')
+          testDateMonth.classList.add('test__date__month')
+          testDateMonth.innerHTML = months[dateMonth].toUpperCase()
+          testDate.appendChild(testDateMonth)
+        
+          const testInfo = document.createElement('div')
+          testInfo.classList.add('test__info')
+          testContent.appendChild(testInfo)
+        
+          const testMatterName = document.createElement('a')
+          testMatterName.classList.add('test__matterName')
+          testMatterName.innerHTML = test[tests[i].matter].name
+          testMatterName.href = '../' + test[tests[i].matter].dir
+          testInfo.appendChild(testMatterName)
+        
+          const testMatterTest = document.createElement('p')
+          testMatterTest.classList.add('test__matterTest')
+          testMatterTest.innerHTML = tests[i].test
+          testInfo.appendChild(testMatterTest)
+        }
       }
     }
     require.send()
