@@ -180,6 +180,15 @@ function createTestTable() {
       ]
 
       for(let i = 0; i < tests.length; i++) {
+        const date = new Date(tests[i].date + ', 2018')
+        const dateMonth = date.getMonth()
+        let dateDay = date.getDate()
+        
+        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        if (dateDay < 10) {
+          dateDay = '0' + dateDay
+        }
+
         const testPage = document.querySelector('.tests')
   
         const testContent = document.createElement('div')
@@ -193,12 +202,12 @@ function createTestTable() {
       
         const testDateDay = document.createElement('span')
         testDateDay.classList.add('test__date__day')
-        testDateDay.innerHTML = tests[i].day
+        testDateDay.innerHTML = dateDay
         testDate.appendChild(testDateDay)
       
         const testDateMonth = document.createElement('span')
         testDateMonth.classList.add('test__date__month')
-        testDateMonth.innerHTML = tests[i].month.toUpperCase()
+        testDateMonth.innerHTML = months[dateMonth].toUpperCase()
         testDate.appendChild(testDateMonth)
       
         const testInfo = document.createElement('div')
