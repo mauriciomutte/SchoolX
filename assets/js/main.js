@@ -157,6 +157,21 @@ function createTestTable() {
   require.onload = function() {
     const tests = JSON.parse(this.responseText)
 
+    function compare(a, b) {
+      const dateA = new Date(a.date + ', 2018') 
+      const dateB = new Date(b.date + ', 2018') 
+    
+      let comparison = 0;
+      if (dateA > dateB) {
+        comparison = 1;
+      } else if (dateA < dateB) {
+        comparison = -1;
+      }
+      return comparison;
+    }
+    
+    tests.sort(compare);
+
     const require = new XMLHttpRequest()
     require.open("GET", '/SchoolX/matter.json', true)
     require.onload = function() {
