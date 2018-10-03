@@ -1,19 +1,4 @@
 [
-  // ARTE
-
-  // BIOLOGIA
-
-  // EDF
-
-  // FILOSOFIA
-
-  // FÍSICA
-
-  // GEOGRAFIA
-
-  // HISTÓRIA
-
-  // ESPANHOL
   {
     "date": "October 1",
     "test": "Avaliação Parcial 1",
@@ -30,9 +15,6 @@
     "matter": 7
   },
 
-  // INGLÊS
-
-  // PORTUGUÊS
   {
     "date": "October 3",
     "test": "Leitura: Eu sou Malala (resenha)",
@@ -59,7 +41,6 @@
     "matter": 9
   },
 
-  // LITERATURA
   {
     "date": "October 24",
     "test": "Avaliação Parcial 2",
@@ -71,9 +52,6 @@
     "matter": 10
   },
 
-  // MATEMATICA
-
-  // QUIMICA
   {
     "date": "October 18",
     "test": "Avaliação Parcial 1",
@@ -90,7 +68,6 @@
     "matter": 12
   },
 
-  // REDAÇÃO
   {
     "date": "November 12",
     "test": "Avaliação Trimestral",
@@ -101,6 +78,4 @@
     "test": "Redações",
     "matter": 13
   }
-
-  // SOCIOLOGIA
 ]
