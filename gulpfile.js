@@ -26,9 +26,7 @@ gulp.task('serve', function () {
       baseDir: "./"
     }
   })
-  gulp.watch("*.html").on("change", reload)
-  gulp.watch("./assets/css/style.css").on("change", reload)
-  gulp.watch("./assets/js/main.js").on("change", reload)
+  gulp.watch(['assets/css/style.css', 'assets/js/main.js'], ['sw'])
 })
 
 // CSS Task
