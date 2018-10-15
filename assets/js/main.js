@@ -197,17 +197,14 @@ function createTestTable() {
       for(let i = 0; i < tests.length; i++) {
         const dateNow = new Date()
         const dateToday = new Date(2018, dateNow.getMonth(),dateNow.getDate())
+        const datePlusAWeek = new Date(2018, dateNow.getMonth(),dateNow.getDate() + 7) 
         const date = new Date(tests[i].date + ', 2018')
         const dateMonth = date.getMonth()
         let dateDay = date.getDate()
-        
-        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-        if (dateDay < 10) {
-          dateDay = '0' + dateDay
-        }
+        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-        if (date >= dateToday) {
-          const testPage = document.querySelector('.tests')
+        function createTestCard(render) {
+          const testPage = document.querySelector('.' + render)
   
           const testContent = document.createElement('div')
           testContent.classList.add('test__content')
@@ -242,6 +239,18 @@ function createTestTable() {
           testMatterTest.classList.add('test__matterTest')
           testMatterTest.innerHTML = tests[i].test
           testInfo.appendChild(testMatterTest)
+        }
+        
+        if (dateDay < 10) {
+          dateDay = '0' + dateDay
+        }
+
+        if (date >= dateToday) {
+          if (date < datePlusAWeek) {
+            createTestCard('tests__next-tests')
+          } else {
+            createTestCard('tests__other-tests')
+          }
         }
       }
     }
