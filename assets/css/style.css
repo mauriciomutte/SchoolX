@@ -149,6 +149,7 @@ a:visited {
   margin: 0 auto;
   max-width: 450px;
   padding: 5px 0 4px;
+  text-align: left;
 }
 
 .test__content +
@@ -204,6 +205,16 @@ a:visited {
 .test__matterTest {
   font-size: 17px;
   font-weight: lighter;
+}
+
+.tests__next-tests__title,
+.tests__other-tests__title {
+  font-size: 26px;
+  text-align: center;
+}
+
+.tests__next-tests {
+  margin-bottom: 4em;
 }
 
 /* LEITURAS */
@@ -663,6 +674,25 @@ a:visited {
   }
 
   /* TEST */
+  .tests {
+    text-align: center;
+  }
+
+  .tests__next-tests,
+  .tests__other-tests {
+    display: inline-block;
+    margin: 1em 6em;
+    vertical-align: top;
+  }
+
+  .tests__next-tests__title,
+  .tests__other-tests__title {
+    text-align: left;
+  }
+
+  .tests__next-tests {
+    margin-bottom: 4em;
+  }
   
   
 
