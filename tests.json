@@ -65,6 +65,22 @@
   },
 
   {
+    "date": "October 22",
+    "test": "Avaliação Parcial 1",
+    "matter": 11
+  },
+  {
+    "date": "November 12",
+    "test": "Avaliação Parcial 2",
+    "matter": 11
+  },
+  {
+    "date": "November 26",
+    "test": "Avaliação Trimestral",
+    "matter": 11
+  },
+
+  {
     "date": "October 18",
     "test": "Avaliação Parcial 1",
     "matter": 12
