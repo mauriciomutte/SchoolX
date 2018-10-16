@@ -1,5 +1,26 @@
 [
   {
+    "date": "October 23",
+    "test": "Trabalho (Livro)",
+    "matter": 3
+  },
+  {
+    "date": "October 30",
+    "test": "Avaliação Parcial 1",
+    "matter": 3
+  },
+  {
+    "date": "November 06",
+    "test": "Avaliação Parcial 2",
+    "matter": 3
+  },
+  {
+    "date": "November 13",
+    "test": "Avaliação Trimestral",
+    "matter": 3
+  },
+
+  {
     "date": "October 18",
     "test": "Apresentação teatral",
     "matter": 5
@@ -105,5 +126,26 @@
     "date": "November 5",
     "test": "Redações",
     "matter": 13
+  },
+
+  {
+    "date": "October 23",
+    "test": "Trabalho (Livro)",
+    "matter": 14
+  },
+  {
+    "date": "October 30",
+    "test": "Avaliação Parcial 1",
+    "matter": 14
+  },
+  {
+    "date": "November 06",
+    "test": "Avaliação Parcial 2",
+    "matter": 14
+  },
+  {
+    "date": "November 13",
+    "test": "Avaliação Trimestral",
+    "matter": 14
   }
 ]
