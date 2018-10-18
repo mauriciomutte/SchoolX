@@ -31,6 +31,16 @@
     "test": "Avaliação Parcial 1",
     "matter": 6
   },
+  {
+    "date": "November 23",
+    "test": "Avaliação Trimestral",
+    "matter": 6
+  },
+  {
+    "date": "November 23",
+    "test": "Relatório Saída de Campo",
+    "matter": 6
+  },
 
   {
     "date": "October 1",
