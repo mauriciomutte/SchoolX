@@ -21,6 +21,17 @@
   },
 
   {
+    "date": "October 31",
+    "test": "Avaliação Parcial 1",
+    "matter": 4
+  },
+  {
+    "date": "November 21",
+    "test": "Avaliação Trimestral",
+    "matter": 4
+  },
+
+  {
     "date": "October 18",
     "test": "Apresentação teatral",
     "matter": 5
