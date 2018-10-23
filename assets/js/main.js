@@ -22,39 +22,39 @@ function createScheduleTable() {
     function createTh() {
       const tr1 = document.createElement('tr')
       table.appendChild(tr1)
-  
-      for (let i = 0; i < weekDays.length; i++) {
+
+      weekDays.forEach(function(item){
         const th = document.createElement('th')
         th.classList.add('table__th')
-        th.innerHTML = weekDays[i]
+        th.innerHTML = item
         tr1.appendChild(th)
-      }
+      })
     }
     createTh()
   
     function createTd() {
-      for (let i = 0; i < periods.length; i++) {
+      periods.forEach(function(item) {
         const tr2 = document.createElement('tr')
         table.appendChild(tr2)
-  
-        for (let z = 0; z < periods[i].length; z++) {
+
+        item.forEach(function(item) {
           var td = document.createElement('td')
           td.classList.add('table__td')
           tr2.appendChild(td)
     
           var a = document.createElement('a')
           a.classList.add('table__a')
-          a.style.backgroundColor = periods[i][z].color
-          a.href = periods[i][z].dir
-          a.innerHTML = periods[i][z].initials
+          a.style.backgroundColor = item.color
+          a.href = item.dir
+          a.innerHTML = item.initials
           td.appendChild(a)
     
           var span = document.createElement('span')
           span.classList.add('table__span')
-          span.innerHTML = periods[i][z].teacherName
+          span.innerHTML = item.teacherName
           a.appendChild(span)
-        }
-      }
+        })
+      })
     }
     createTd()
   }
@@ -130,12 +130,12 @@ function createMatterHeader(matter, matterNum) {
       const conteudoxJSON = JSON.parse(this.responseText)
       const conteudoxArray = [conteudoxJSON.arte, conteudoxJSON.biologia, conteudoxJSON.edf, conteudoxJSON.filosofia, conteudoxJSON.fisica, conteudoxJSON.geografia, conteudoxJSON.historia, conteudoxJSON.espanhol, conteudoxJSON.ingles, conteudoxJSON.portugues, conteudoxJSON.literatura, conteudoxJSON.matematica, conteudoxJSON.quimica, conteudoxJSON.redacao, conteudoxJSON.sociologia]
       const conteudoxContent = conteudoxArray[matterNum].secondTri.content.reverse()
-      for (let i = 0; i < conteudoxContent.length; i++) {
+      conteudoxContent.forEach(function(item) {
         matterContentLi = document.createElement('Li')
         matterContentLi.classList.add('matterContent__li')
-        matterContentLi.innerHTML = conteudoxContent[i]
+        matterContentLi.innerHTML = item
         matterContentUl.appendChild(matterContentLi)
-      }
+      })
     }
     require.send()
 
@@ -161,15 +161,12 @@ function createTestTable() {
       const dateA = new Date(a.date + ', 2018') 
       const dateB = new Date(b.date + ', 2018') 
     
-      let comparison = 0;
       if (dateA > dateB) {
-        comparison = 1;
+        return comparison = 1;
       } else if (dateA < dateB) {
-        comparison = -1;
+        return comparison = -1;
       }
-      return comparison;
     }
-    
     tests.sort(compare);
 
     const require = new XMLHttpRequest()
@@ -194,11 +191,11 @@ function createTestTable() {
         matter.sociologia
       ]
 
-      for(let i = 0; i < tests.length; i++) {
+      tests.forEach(function(item) {
         const dateNow = new Date()
         const dateToday = new Date(2018, dateNow.getMonth(),dateNow.getDate())
         const datePlusAWeek = new Date(2018, dateNow.getMonth(),dateNow.getDate() + 7) 
-        const date = new Date(tests[i].date + ', 2018')
+        const date = new Date(item.date + ', 2018')
         const dateMonth = date.getMonth()
         let dateDay = date.getDate()
         const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -208,7 +205,7 @@ function createTestTable() {
   
           const testContent = document.createElement('div')
           testContent.classList.add('test__content')
-          testContent.style.backgroundColor = test[tests[i].matter].color
+          testContent.style.backgroundColor = test[item.matter].color
           testPage.appendChild(testContent)
         
           const testDate = document.createElement('div')
@@ -231,13 +228,13 @@ function createTestTable() {
         
           const testMatterName = document.createElement('a')
           testMatterName.classList.add('test__matterName')
-          testMatterName.innerHTML = test[tests[i].matter].name
-          testMatterName.href = '../' + test[tests[i].matter].dir
+          testMatterName.innerHTML = test[item.matter].name
+          testMatterName.href = '../' + test[item.matter].dir
           testInfo.appendChild(testMatterName)
         
           const testMatterTest = document.createElement('p')
           testMatterTest.classList.add('test__matterTest')
-          testMatterTest.innerHTML = tests[i].test
+          testMatterTest.innerHTML = item.test
           testInfo.appendChild(testMatterTest)
         }
         
@@ -252,7 +249,7 @@ function createTestTable() {
             createTestCard('tests__other-tests')
           }
         }
-      }
+      })
     }
     require.send()
   }
@@ -276,12 +273,12 @@ function matterList(trimestre, materia) {
   trimestreLista.classList.add('lista__trimestre__conteudo--ul')
   divList.appendChild(trimestreLista)
 
-  for (let i = 0; i < trimestre.content.length; i++) {
+  trimestre.forEach(function(item) {
     const conteudo = document.createElement('li')
     conteudo.classList.add('lista__trimestre__conteudo--li')
-    conteudo.innerHTML = trimestre.content[i]
+    conteudo.innerHTML = trimestre.item
     trimestreLista.appendChild(conteudo)
-  }
+  })
 }
 
 function callJSON(m, materia, ano) {
