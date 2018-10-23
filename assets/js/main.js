@@ -38,18 +38,18 @@ function createScheduleTable() {
         table.appendChild(tr2)
 
         item.forEach(function(item) {
-          var td = document.createElement('td')
+          const td = document.createElement('td')
           td.classList.add('table__td')
           tr2.appendChild(td)
     
-          var a = document.createElement('a')
+          const a = document.createElement('a')
           a.classList.add('table__a')
           a.style.backgroundColor = item.color
           a.href = item.dir
           a.innerHTML = item.initials
           td.appendChild(a)
     
-          var span = document.createElement('span')
+          const span = document.createElement('span')
           span.classList.add('table__span')
           span.innerHTML = item.teacherName
           a.appendChild(span)
@@ -81,23 +81,23 @@ function createMatterHeader(matter, matterNum) {
   matterHeaderTeacher.innerHTML = matter.teacherName + ' ' + matter.teacherLastName
   matterHeader.appendChild(matterHeaderTeacher)
 
-  matterBody = document.createElement('div')
+  const matterBody = document.createElement('div')
   matterBody.classList.add('matterBody')
   matterSection.appendChild(matterBody)
 
 
   function createMatterNota() {
-    matterNota = document.createElement('div')
+    const matterNota = document.createElement('div')
     matterNota.classList.add('matterNota')
     matterBody.appendChild(matterNota)
 
-    matterNotaTitle = document.createElement('h4')
+    const matterNotaTitle = document.createElement('h4')
     matterNotaTitle.classList.add('matterNota__title')
     matterNotaTitle.style.backgroundColor = matter.color
     matterNotaTitle.innerHTML = 'Provas'
     matterNota.appendChild(matterNotaTitle)
 
-    matterNotaError = document.createElement('p')
+    const matterNotaError = document.createElement('p')
     matterNotaError.classList.add('matterNota__error')
     matterNotaError.style.color = matter.color
     matterNotaError.innerHTML = 'Não há prova para esta matéria'
@@ -106,21 +106,21 @@ function createMatterHeader(matter, matterNum) {
   createMatterNota()
 
   function createMatterContent() {
-    matterContent = document.createElement('div')
+    const matterContent = document.createElement('div')
     matterContent.classList.add('matterContent')
     matterBody.appendChild(matterContent)
 
-    matterContentTitle = document.createElement('h4')
+    const matterContentTitle = document.createElement('h4')
     matterContentTitle.classList.add('matterContent__title')
     matterContentTitle.style.backgroundColor = matter.color
     matterContentTitle.innerHTML = 'Conteúdo'
     matterContent.appendChild(matterContentTitle)
 
-    matterContentBox = document.createElement('div')
+    const matterContentBox = document.createElement('div')
     matterContentBox.classList.add('matterContent__box')
     matterContent.appendChild(matterContentBox)
 
-    matterContentUl = document.createElement('ul')
+    const matterContentUl = document.createElement('ul')
     matterContentUl.classList.add('matterContent__ul')
     matterContentBox.appendChild(matterContentUl)
 
@@ -131,7 +131,7 @@ function createMatterHeader(matter, matterNum) {
       const conteudoxArray = [conteudoxJSON.arte, conteudoxJSON.biologia, conteudoxJSON.edf, conteudoxJSON.filosofia, conteudoxJSON.fisica, conteudoxJSON.geografia, conteudoxJSON.historia, conteudoxJSON.espanhol, conteudoxJSON.ingles, conteudoxJSON.portugues, conteudoxJSON.literatura, conteudoxJSON.matematica, conteudoxJSON.quimica, conteudoxJSON.redacao, conteudoxJSON.sociologia]
       const conteudoxContent = conteudoxArray[matterNum].secondTri.content.reverse()
       conteudoxContent.forEach(function(item) {
-        matterContentLi = document.createElement('Li')
+        const matterContentLi = document.createElement('Li')
         matterContentLi.classList.add('matterContent__li')
         matterContentLi.innerHTML = item
         matterContentUl.appendChild(matterContentLi)
@@ -139,7 +139,7 @@ function createMatterHeader(matter, matterNum) {
     }
     require.send()
 
-    matterContentBtn = document.createElement('a')
+    const matterContentBtn = document.createElement('a')
     matterContentBtn.classList.add('matterContent__btn')
     matterContentBtn.style.backgroundColor = matter.color
     matterContentBtn.href = '../conteudo/segundo/materia/' + matter.dirConteudox + '.html'
