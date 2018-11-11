@@ -28,12 +28,7 @@
   },
   {
     "date": "November 13",
-    "test": "Avaliação Parcial 2",
-    "matter": 3
-  },
-  {
-    "date": "November 13",
-    "test": "Avaliação Trimestral",
+    "test": "Questões do livro",
     "matter": 3
   },
 
@@ -181,7 +176,7 @@
   },
   {
     "date": "November 13",
-    "test": "Avaliação Parcial 2",
+    "test": "Questões do livro",
     "matter": 14
   }
 ]
