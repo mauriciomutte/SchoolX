@@ -1,5 +1,6 @@
 {
   "arte": {
+    "number": 0,
     "name": "Arte",
     "initials": "Arte",
     "teacherName": "Rosane",
@@ -9,6 +10,7 @@
     "dirConteudox": "arte"
   },
   "biologia": {
+    "number": 1,
     "name": "Biologia",
     "initials": "BIO",
     "teacherName": "Rafaela",
@@ -18,6 +20,7 @@
     "dirConteudox": "biologia"
   },
   "educacaoFisica": {
+    "number": 2,
     "name": "Educação Física",
     "initials": "EF",
     "teacherName": "Eduardo",
@@ -27,6 +30,7 @@
     "dirConteudox": "edfis"
   },
   "filosofia": {
+    "number": 3,
     "name": "Filosofia",
     "initials": "FIL",
     "teacherName": "Alexandre",
@@ -36,6 +40,7 @@
     "dirConteudox": "filosofia"
   },
   "fisica": {
+    "number": 4,
     "name": "Física",
     "initials": "Física",
     "teacherName": "Tatiane",
@@ -45,6 +50,7 @@
     "dirConteudox": "fisica"
   },
   "geografia": {
+    "number": 5,
     "name": "Geografia",
     "initials": "GEO",
     "teacherName": "Fábio",
@@ -54,6 +60,7 @@
     "dirConteudox": "geografia"
   },
   "historia": {
+    "number": 6,
     "name": "História",
     "initials": "HIS",
     "teacherName": "Renata",
@@ -63,6 +70,7 @@
     "dirConteudox": "historia"
   },
   "linguaEspanhola": {
+    "number": 7,
     "name": "Língua Espanhola",
     "initials": "LE",
     "teacherName": "Cristiane",
@@ -72,6 +80,7 @@
     "dirConteudox": "espanhol"
   },
   "linguaInglesa": {
+    "number": 8,
     "name": "Língua Inglesa",
     "initials": "LI",
     "teacherName": "Marcos",
@@ -81,6 +90,7 @@
     "dirConteudox": "ingles"
   },
   "linguaPortuguesa": {
+    "number": 9,
     "name": "Língua Portuguesa",
     "initials": "LP",
     "teacherName": "Marlise",
@@ -90,6 +100,7 @@
     "dirConteudox": "portugues"
   },
   "literatura": {
+    "number": 10,
     "name": "Literatura",
     "initials": "LIT",
     "teacherName": "Marlise",
@@ -99,6 +110,7 @@
     "dirConteudox": "literatura"
   },
   "matematica": {
+    "number": 11,
     "name": "Matemática",
     "initials": "MAT",
     "teacherName": "Márcio",
@@ -108,6 +120,7 @@
     "dirConteudox": "matematica"
   },
   "quimica": {
+    "number": 12,
     "name": "Química",
     "initials": "QUI",
     "teacherName": "Valéria",
@@ -117,6 +130,7 @@
     "dirConteudox": "quimica"
   },
   "redacao": {
+    "number": 13,
     "name": "Redação",
     "initials": "RED",
     "teacherName": "Marlise",
@@ -126,6 +140,7 @@
     "dirConteudox": "redacao"
   },
   "sociologia": {
+    "number": 14,
     "name": "Sociologia",
     "initials": "SOC",
     "teacherName": "Alexandre",
