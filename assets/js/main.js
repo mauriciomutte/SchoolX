@@ -97,11 +97,28 @@ function createMatterHeader(matter, matterNum) {
     matterNotaTitle.innerHTML = 'Provas'
     matterNota.appendChild(matterNotaTitle)
 
-    const matterNotaError = document.createElement('p')
-    matterNotaError.classList.add('matterNota__error')
-    matterNotaError.style.color = matter.color
-    matterNotaError.innerHTML = 'Não há prova para esta matéria'
-    matterNota.appendChild(matterNotaError)
+    const matterNotaUl = document.createElement('ul')
+    matterNotaUl.classList.add('matterNota__ul')
+    matterNota.appendChild(matterNotaUl)
+
+    require.open("GET", '/SchoolX/tests.json', true)
+    require.onload = function() {
+      const tests = JSON.parse(this.responseText)
+
+      tests.forEach(function(item) {
+        if (item.matter === matter.number) {
+          const matterNotaLink = document.createElement('a')
+          matterNotaLink.classList.add('matterNota__a')
+          matterNota.appendChild(matterNotaLink)
+
+          const matterNotaLi = document.createElement('li')
+          matterNotaLi.classList.add('matterNota__li')
+          matterNotaLi.innerHTML = item.test + ' (' + item.date + ')'
+          matterNotaLink.appendChild(matterNotaLi)
+        }
+      })
+    }
+    require.send()
   }
   createMatterNota()
 
