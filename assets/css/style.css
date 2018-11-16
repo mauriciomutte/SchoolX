@@ -309,6 +309,28 @@ a:visited {
   padding: 10px;
 }
 
+.matterNota__ul {
+  background-color: #fff;
+  margin: 2px 0 0 0;
+  padding: 5px;
+  width: 254px;
+}
+
+.matterNota__li {
+  color: #000;
+  font-weight: 300;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0 10px;
+  text-align: left;
+  max-width: 100%;
+}
+
+.matterNota__li +
+.matterNota__li {
+  border-top: 1px solid #ccc;
+}
+
 .matterNota__error {
   background-color: #fff;
   font-weight: bolder;
@@ -316,21 +338,6 @@ a:visited {
   padding: 12px 0;
   text-align: center;
   width: 264px;
-}
-
-.matterNota__th {
-  background-color: #fff;
-  font-size: 17px;
-  padding: 6px;
-  text-transform: uppercase;
-  width: 120px;
-}
-
-.matterNota__td {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 300;
-  padding: 4px;
 }
 
 /* MATTER CONTENT */
