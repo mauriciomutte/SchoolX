@@ -93,8 +93,8 @@
     "number": 9,
     "name": "Língua Portuguesa",
     "initials": "LP",
-    "teacherName": "Marlise",
-    "teacherLastName": "Fraga",
+    "teacherName": "Kethelly",
+    "teacherLastName": "Silveira",
     "color": "#61B5D9",
     "dir": "materia/linguaPortuguesa.html",
     "dirConteudox": "portugues"
@@ -103,8 +103,8 @@
     "number": 10,
     "name": "Literatura",
     "initials": "LIT",
-    "teacherName": "Marlise",
-    "teacherLastName": "Fraga",
+    "teacherName": "Kethelly",
+    "teacherLastName": "Silveira",
     "color": "#EABB23",
     "dir": "materia/literatura.html",
     "dirConteudox": "literatura"
@@ -133,8 +133,8 @@
     "number": 13,
     "name": "Redação",
     "initials": "RED",
-    "teacherName": "Marlise",
-    "teacherLastName": "Fraga",
+    "teacherName": "Kethelly",
+    "teacherLastName": "Silveira",
     "color": "#C75753",
     "dir": "materia/redacao.html",
     "dirConteudox": "redacao"
