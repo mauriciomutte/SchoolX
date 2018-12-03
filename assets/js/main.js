@@ -286,10 +286,11 @@ function matterList(trimestre, materia) {
   trimestreLista.classList.add('lista__trimestre__conteudo--ul')
   divList.appendChild(trimestreLista)
 
-  trimestre.forEach(function(item) {
+  trimestre.content.forEach(function(item) {
+    console.log(item)
     const conteudo = document.createElement('li')
     conteudo.classList.add('lista__trimestre__conteudo--li')
-    conteudo.innerHTML = trimestre.item
+    conteudo.innerHTML = item
     trimestreLista.appendChild(conteudo)
   })
 }
