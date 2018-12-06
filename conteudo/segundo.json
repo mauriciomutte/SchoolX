@@ -17,16 +17,18 @@
     "secondTri": {
       "title": "2º Trimestre",
       "content": [
-        "Calor (calorimetria_",
-        "Trocas de Calor (calorimetria_",
-        "Capacidade Térmica (calorimetria_",
-        "Propagação do Calor (calorimetria_",
+        "Calor (calorimetria)",
+        "Trocas de Calor (calorimetria)",
+        "Capacidade Térmica (calorimetria)",
+        "Propagação do Calor (calorimetria)",
         "Transformações gasosas"
       ]
     },
     "thirdTri": {
       "title": "3º Trimestre",
       "content": [
+        "Ondulatória",
+        "Óptica"
       ]
     }
   },
