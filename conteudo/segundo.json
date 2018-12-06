@@ -45,12 +45,15 @@
         "Matrizes",
         "Determinantes",
         "Regra de sarrus (determinantes)",
-        "Teorema de Laplace (determinantes)"
+        "Teorema de Laplace (determinantes)",
+        "Teorema de Cramer"
       ]
     },
     "thirdTri": {
       "title": "3º Trimestre",
       "content": [
+        "Geometria plana",
+        "Geometria espacial"
       ]
     }
   },
