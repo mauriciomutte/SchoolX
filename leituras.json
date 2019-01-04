@@ -1,0 +1,74 @@
+[
+  {
+    "img": "../assets/img/book-um.jpg",
+    "dados": [
+      "<span>Título:</span> Os sofrimentos do jovem Werther",
+      "<span>Autor:</span> Goethe",
+      "<span>Editora:</span> L&PM",
+      "<span>Data:</span> Março"
+    ]
+  },
+  {
+    "img": "../assets/img/book-dois.jpg",
+    "dados": [
+      "<span>Título:</span> Vicente em palavras",
+      "<span>Autor:</span> Caio Riter",
+      "<span>Editora:</span> Editora LÊ ",
+      "<span>Data:</span> Maio"
+    ]
+  },
+  {
+    "img": "../assets/img/book-tres.png",
+    "dados": [
+      "<span>Título:</span> As vantagens de ser invisível",
+      "<span>Autor:</span> Stephen Chbosky",
+      "<span>Editora:</span> Rocco",
+      "<span>Data:</span> Junho"
+    ]
+  },
+  {
+    "img": "../assets/img/book-quatro.png",
+    "dados": [
+      "<span>Título:</span> Eu sou Malala",
+      "<span>Autor:</span> Malala Yosafzai",
+      "<span>Editora:</span> Companhia das Letras",
+      "<span>Data:</span> Julho"
+    ]
+  },
+  {
+    "img": "../assets/img/book-cinco.jpg",
+    "dados": [
+      "<span>Título:</span> Dom Casmurro em HQ",
+      "<span>Autor:</span> Machado de Assis",
+      "<span>Editora:</span> Ática",
+      "<span>Data:</span> Agosto"
+    ]
+  },
+  {
+    "img": "../assets/img/book-seis.png",
+    "dados": [
+      "<span>Título:</span> O cortiço",
+      "<span>Autor:</span> Aluíso Azevedo",
+      "<span>Editora:</span> Várias editoras",
+      "<span>Data:</span> Setembro"
+    ]
+  },
+  {
+    "img": "../assets/img/book-sete.png",
+    "dados": [
+      "<span>Título:</span> O conde de Monte Cristo",
+      "<span>Autor:</span> Alexandre Dumas",
+      "<span>Editora:</span> Scipone",
+      "<span>Data:</span> Outubro"
+    ]
+  },
+  {
+    "img": "../assets/img/book-oito.jpg",
+    "dados": [
+      "<span>Título:</span> O filho de mil homens",
+      "<span>Autor:</span> Valter Hugo Mãe",
+      "<span>Editora:</span> Globo",
+      "<span>Data:</span> Novembro"
+    ]
+  }
+]
