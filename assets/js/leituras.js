@@ -1,5 +1,5 @@
 const require = new XMLHttpRequest();
-require.open('GET', '/../leituras.json', true);
+require.open('GET', '/schoolX/leituras.json', true);
 require.onload = function() {
   const livrosList = JSON.parse(this.responseText);
 
