@@ -1,10 +1,13 @@
-
+// Location
+const dirMatter = '/schoolX/matter.json'
+const dirMatterContent = '/schoolX/conteudo/segundo.json'
+const dirTests = '/schoolX/tests.json'
 
 // Create schedule
 
 function createScheduleTable() {
   const require = new XMLHttpRequest()
-  require.open("GET", '/schoolX/matter.json', true)
+  require.open("GET", dirMatter, true)
   require.onload = function() {
     const matterJSON = JSON.parse(this.responseText)
     console.log(matterJSON)
@@ -101,7 +104,7 @@ function createMatterHeader(matter, matterNum) {
     matterNotaUl.classList.add('matterNota__ul')
     matterNota.appendChild(matterNotaUl)
 
-    require.open("GET", '/schoolX/tests.json', true)
+    require.open("GET", dirTests, true)
     require.onload = function() {
       const tests = JSON.parse(this.responseText)
 
@@ -138,7 +141,7 @@ function createMatterHeader(matter, matterNum) {
     matterContentBox.appendChild(matterContentUl)
 
     const require = new XMLHttpRequest()
-    require.open("GET", '/schoolX/conteudo/segundo.json', true)
+    require.open("GET", dirMatterContent, true)
     require.onload = function() {
       const conteudoxJSON = JSON.parse(this.responseText)
       const conteudoxArray = [conteudoxJSON.arte, conteudoxJSON.biologia, conteudoxJSON.edf, conteudoxJSON.filosofia, conteudoxJSON.fisica, conteudoxJSON.geografia, conteudoxJSON.historia, conteudoxJSON.espanhol, conteudoxJSON.ingles, conteudoxJSON.portugues, conteudoxJSON.literatura, conteudoxJSON.matematica, conteudoxJSON.quimica, conteudoxJSON.redacao, conteudoxJSON.sociologia]
@@ -166,7 +169,7 @@ function createMatterHeader(matter, matterNum) {
 // createTestTable
 function createTestTable() {
   const require = new XMLHttpRequest()
-  require.open("GET", '/schoolX/tests.json', true)
+  require.open("GET", dirTests, true)
   require.onload = function() {
     const tests = JSON.parse(this.responseText)
 
@@ -183,7 +186,7 @@ function createTestTable() {
     tests.sort(compare);
 
     const require = new XMLHttpRequest()
-    require.open("GET", '/schoolX/matter.json', true)
+    require.open("GET", dirMatter, true)
     require.onload = function() {
       const matter = JSON.parse(this.responseText)
       const test = [
