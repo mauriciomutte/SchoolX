@@ -1,8 +1,8 @@
-{
-  "fisica": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+[
+  {
+    "name":"Física",
+    "listContent": [
+      [
         "Trabalho (dinâmica)",
         "Potênica (dinâmica)",
         "Energia mecânica (dinâmica)",
@@ -12,160 +12,126 @@
         "Temperatura (termometria)",
         "Escalas termométricas (termometria)",
         "Conversões (termometria)"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Calor (calorimetria)",
         "Trocas de Calor (calorimetria)",
         "Capacidade Térmica (calorimetria)",
         "Propagação do Calor (calorimetria)",
         "Transformações gasosas"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Ondulatória",
         "Óptica"
       ]
-    }
+    ]
   },
-  "matematica": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Matemática",
+    "listContent": [
+      [
         "Trigonometria no triângulo retângulo",
         "Círculo trigonométrico",
         "Funções trigonométricas"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Matrizes",
         "Determinantes",
         "Regra de sarrus (determinantes)",
         "Teorema de Laplace (determinantes)",
         "Teorema de Cramer"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Geometria plana",
         "Geometria espacial"
       ]
-    }
+    ]
   },
-  "quimica": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Química",
+    "listContent": [
+      [
         "Concentração de soluções (comum, molar, densidade, título, íons e relações entre concentrações)",
         "Diluição de soluções",
         "Mistura de soluções",
         "Propriedades coligativas"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Cinética química",
         "Termoquímica",
         "Entalpia de ligação (termoquímica)",
         "Lei de Hess (termoquímica)"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Equilíbrio químico",
         "Equilíbrio iônico",
         "Hidrólise salina",
         "Pilhas"
       ]
-    }
+    ]
   },
-  "biologia": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Biologia",
+    "listContent": [
+      [
         "Bactérias  Gram positivas e Gram negativas",
         "Taxonomia",
         "Nomenclatura científica",
         "Reinos da natureza"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Grupo Plantae",
         "Filogenia animal"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Reino Animallia",
         "Reino Plantae"
       ]
-    }
+    ]
   },
-  "filosofia": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Filosofia",
+    "listContent": [
+      [
         "Democracia",
         "Ideias políticas",
         "Ideias democráticas",
-        "Poder judiciário"      
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+        "Poder judiciário"  
+      ],
+      [
         "Ética aplicada",
         "Bioética",
         "Ética ambiental",
         "Ética dos negócios"
+      ],
+      [
+
       ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
-      ]
-    }
+    ]
   },
-  "sociologia": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Sociologia",
+    "listContent": [
+      [
         "Sociologia da comunicação",
         "Surgimento da Sociologia no Brasil",
         "Conceitos sociológicos de Comte, Durkheim, Weber e Marx"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Identidade e subjetividade",
         "Identidade social",
         "Identidade narrativa",
         "Idendidade no mundo globalizado"
+      ],
+      [
+
       ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
-      ]
-    }
+    ]
   },
-  "geografia": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Geografia",
+    "listContent": [
+      [
         "Configuração territorial (América do Norte)",
         "Relevo e hidrografia (América do Norte)",
         "Clima e vegetação (América do Norte)",
@@ -173,201 +139,153 @@
         "Canadá: um país grande, mas pouco ocupado (América do Norte)",
         "México: contrastes sociais e migrações (América do Norte)",
         "América Central"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "América do Sul"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Ásia",
         "Europa"
       ]
-    }
+    ]
   },
-  "historia": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+  {
+    "name":"História",
+    "listContent": [
+      [
+
+      ],
+      [
         "Primeira guerra mundial"
+      ],
+      [
+
       ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
-      ]
-    }
+    ]
   },
-  "portugues": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Português",
+    "listContent": [
+      [
         "Interpretação de textos",
         "Pronomes pessoais",
         "Pronomes possessivos",
         "Pronomes demonstrativos"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Artigo (definido e indefinido)",
         "Numeral (cardinal, ordinal, multiplicativo e fracionário)",
         "Interjeição"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Advérbio e Loc. adverbial",
         "Preposição",
         "Conjunção",
         "Sintaxe (Período, frase e oração)"
       ]
-    }
+    ]
   },
-  "literatura": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Literatura",
+    "listContent": [
+      [
         "Primeira geração romântica (romantismo)",
         "Segunda geração romântica (romantismo)",
         "Terceira geração romântica (romantismo)"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Realismo"
+      ],
+      [
+
       ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
-      ]
-    }
+    ]
   },
-  "redacao": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Redação",
+    "listContent": [
+      [
         "Dissertação argumentativa",
         "Texto enciclopédico",
         "Reportagem"
+      ],
+      [
+        "Dissertação argumentativa"
+      ],
+      [
+        "Dissertação argumentativa"
       ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
-      ]
-    }
+    ]
   },
-  "ingles": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Inglês",
+    "listContent": [
+      [
         "Modal verbs",
         "Prepositions of time"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Verb tenses (present, past and future)"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Passive voice"
       ]
-    }
+    ]
   },
-  "espanhol": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Espanhol",
+    "listContent": [
+      [
         "Compreensão textual",
         "Elementos de coesão",
         "Presente do indicativo (regulares e irregulares)",
         "Marcadores textuais"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Futuro perfeito",
         "futuro imperfeito",
         "Futuro simples",
         "Conjunções"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Acento diacrítico", 
         "Apócope", 
         "Discurso direto e indireto"
       ]
-    }
+    ]
   },
-  "arte": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Artes",
+    "listContent": [
+      [
         "Pop art",
         "Xilogravura"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Semana de Arte Moderna de 1922",
         "Anita Malfatti"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Tropicália",
         "Patrimônio Cultural"
       ]
-    }
+    ]
   },
-  "edf": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Educação Física",
+    "listContent": [
+      [
         "Estrutura do corpo humano",
         "Articulações",
         "Músculos"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Movimentos do corpo",
         "Basquete"
+      ],
+      [
+
       ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
-      ]
-    }
+    ]
   }
-}
+]
