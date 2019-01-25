@@ -91,7 +91,7 @@ function createMatterHeader(matter, matterNum) {
     const matterContentBtn = document.createElement('a')
     matterContentBtn.classList.add('matterContent__btn')
     matterContentBtn.style.backgroundColor = matter.color
-    matterContentBtn.href = '../conteudo/segundo/materia/' + matter.dirConteudox + '.html'
+    matterContentBtn.href = '../conteudo/segundo/'
     matterContentBtn.innerHTML = 'Ver conteúdo'
     matterContentBox.appendChild(matterContentBtn)
 
