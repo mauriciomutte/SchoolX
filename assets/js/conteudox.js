@@ -21,7 +21,7 @@ function conteudoxIndex(em) {
 
       const itemImg = document.createElement('img');
       itemImg.classList.add('menu__materia__box--img');
-      itemImg.src = '/assets/img/' + element.name + '.png';
+      itemImg.src = '../../assets/img/' + element.name + '.png';
       itemImg.alt = element.name + ' icon';
       item.appendChild(itemImg);
 
@@ -52,7 +52,7 @@ function conteudoX(em) {
 
       const titleImg = document.createElement('img');
       titleImg.classList.add('materia__lista--img');
-      titleImg.src = '../../../assets/img/' + element.name + '_w.png';
+      titleImg.src = '../../assets/img/' + element.name + '_w.png';
       titleDiv.appendChild(titleImg);
 
       const title = document.createElement('h2');
