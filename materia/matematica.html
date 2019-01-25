@@ -53,13 +53,7 @@
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/materia.js"></script>
   <script>
-    const require = new XMLHttpRequest()
-    require.open("GET", dirMatter, true)
-    require.onload = function() {
-      const matterJSON = JSON.parse(this.responseText)
-      createMatterHeader(matterJSON.matematica, 1)
-    }
-    require.send()
+    callMatter(1)
   </script>
 </body>
 </html>

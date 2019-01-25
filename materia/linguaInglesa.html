@@ -54,13 +54,7 @@
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/materia.js"></script>
   <script>
-    const require = new XMLHttpRequest()
-    require.open("GET", dirMatter, true)
-    require.onload = function() {
-      const matterJSON = JSON.parse(this.responseText)
-      createMatterHeader(matterJSON.linguaInglesa, 11)
-    }
-    require.send()
+    callMatter(11)
   </script>
 </body>
 </html>
