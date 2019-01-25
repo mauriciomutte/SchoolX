@@ -1,46 +1,5 @@
-{
-  "arte": {
-    "number": 0,
-    "name": "Arte",
-    "initials": "Arte",
-    "teacherName": "Rosane",
-    "teacherLastName": "Conti Bones",
-    "color": "#8584BD",
-    "dir": "materia/arte.html",
-    "dirConteudox": "arte"
-  },
-  "biologia": {
-    "number": 1,
-    "name": "Biologia",
-    "initials": "BIO",
-    "teacherName": "Rafaela",
-    "teacherLastName": "Mônego",
-    "color": "#9932CC",
-    "dir": "materia/biologia.html",
-    "dirConteudox": "biologia"
-  },
-  "educacaoFisica": {
-    "number": 2,
-    "name": "Educação Física",
-    "initials": "EF",
-    "teacherName": "Eduardo",
-    "teacherLastName": "Machado",
-    "color": "#279AD0",
-    "dir": "materia/educacaoFisica.html",
-    "dirConteudox": "edfis"
-  },
-  "filosofia": {
-    "number": 3,
-    "name": "Filosofia",
-    "initials": "FIL",
-    "teacherName": "Alexandre",
-    "teacherLastName": "Barbosa",
-    "color": "#BB8940",
-    "dir": "materia/filosofia.html",
-    "dirConteudox": "filosofia"
-  },
-  "fisica": {
-    "number": 4,
+[
+  {
     "name": "Física",
     "initials": "Física",
     "teacherName": "Tatiane",
@@ -49,68 +8,7 @@
     "dir": "materia/fisica.html",
     "dirConteudox": "fisica"
   },
-  "geografia": {
-    "number": 5,
-    "name": "Geografia",
-    "initials": "GEO",
-    "teacherName": "Fábio",
-    "teacherLastName": "Lopes",
-    "color": "#37704D",
-    "dir": "materia/geografia.html",
-    "dirConteudox": "geografia"
-  },
-  "historia": {
-    "number": 6,
-    "name": "História",
-    "initials": "HIS",
-    "teacherName": "Renata",
-    "teacherLastName": "Rocha",
-    "color": "#6398CE",
-    "dir": "materia/historia.html",
-    "dirConteudox": "historia"
-  },
-  "linguaEspanhola": {
-    "number": 7,
-    "name": "Língua Espanhola",
-    "initials": "LE",
-    "teacherName": "Cristiane",
-    "teacherLastName": "Carvalho",
-    "color": "#4985C4",
-    "dir": "materia/linguaEspanhola.html",
-    "dirConteudox": "espanhol"
-  },
-  "linguaInglesa": {
-    "number": 8,
-    "name": "Língua Inglesa",
-    "initials": "LI",
-    "teacherName": "Marcos",
-    "teacherLastName": "Oliveira",
-    "color": "#927963",
-    "dir": "materia/linguaInglesa.html",
-    "dirConteudox": "ingles"
-  },
-  "linguaPortuguesa": {
-    "number": 9,
-    "name": "Língua Portuguesa",
-    "initials": "LP",
-    "teacherName": "Kethelly",
-    "teacherLastName": "Silveira",
-    "color": "#61B5D9",
-    "dir": "materia/linguaPortuguesa.html",
-    "dirConteudox": "portugues"
-  },
-  "literatura": {
-    "number": 10,
-    "name": "Literatura",
-    "initials": "LIT",
-    "teacherName": "Kethelly",
-    "teacherLastName": "Silveira",
-    "color": "#EABB23",
-    "dir": "materia/literatura.html",
-    "dirConteudox": "literatura"
-  },
-  "matematica": {
-    "number": 11,
+  {
     "name": "Matemática",
     "initials": "MAT",
     "teacherName": "Márcio",
@@ -119,8 +17,7 @@
     "dir": "materia/matematica.html",
     "dirConteudox": "matematica"
   },
-  "quimica": {
-    "number": 12,
+  {
     "name": "Química",
     "initials": "QUI",
     "teacherName": "Valéria",
@@ -129,8 +26,70 @@
     "dir": "materia/quimica.html",
     "dirConteudox": "quimica"
   },
-  "redacao": {
-    "number": 13,
+  {
+    "name": "Biologia",
+    "initials": "BIO",
+    "teacherName": "Rafaela",
+    "teacherLastName": "Mônego",
+    "color": "#9932CC",
+    "dir": "materia/biologia.html",
+    "dirConteudox": "biologia"
+  },
+  {
+    "name": "Filosofia",
+    "initials": "FIL",
+    "teacherName": "Alexandre",
+    "teacherLastName": "Barbosa",
+    "color": "#BB8940",
+    "dir": "materia/filosofia.html",
+    "dirConteudox": "filosofia"
+  },
+  {
+    "name": "Sociologia",
+    "initials": "SOC",
+    "teacherName": "Alexandre",
+    "teacherLastName": "Barbosa",
+    "color": "#E4893A",
+    "dir": "materia/sociologia.html",
+    "dirConteudox": "sociologia"
+  },
+  {
+    "name": "Geografia",
+    "initials": "GEO",
+    "teacherName": "Fábio",
+    "teacherLastName": "Lopes",
+    "color": "#37704D",
+    "dir": "materia/geografia.html",
+    "dirConteudox": "geografia"
+  },
+  {
+    "name": "História",
+    "initials": "HIS",
+    "teacherName": "Renata",
+    "teacherLastName": "Rocha",
+    "color": "#6398CE",
+    "dir": "materia/historia.html",
+    "dirConteudox": "historia"
+  },
+  {
+    "name": "Língua Portuguesa",
+    "initials": "LP",
+    "teacherName": "Kethelly",
+    "teacherLastName": "Silveira",
+    "color": "#61B5D9",
+    "dir": "materia/linguaPortuguesa.html",
+    "dirConteudox": "portugues"
+  },
+  {
+    "name": "Literatura",
+    "initials": "LIT",
+    "teacherName": "Kethelly",
+    "teacherLastName": "Silveira",
+    "color": "#EABB23",
+    "dir": "materia/literatura.html",
+    "dirConteudox": "literatura"
+  },
+  {
     "name": "Redação",
     "initials": "RED",
     "teacherName": "Kethelly",
@@ -139,16 +98,40 @@
     "dir": "materia/redacao.html",
     "dirConteudox": "redacao"
   },
-  "sociologia": {
-    "number": 14,
-    "name": "Sociologia",
-    "initials": "SOC",
-    "teacherName": "Alexandre",
-    "teacherLastName": "Barbosa",
-    "color": "#E4893A",
-    "dir": "materia/sociologia.html",
-    "dirConteudox": "sociologia"
+  {
+    "name": "Língua Inglesa",
+    "initials": "LI",
+    "teacherName": "Marcos",
+    "teacherLastName": "Oliveira",
+    "color": "#927963",
+    "dir": "materia/linguaInglesa.html",
+    "dirConteudox": "ingles"
+  },
+  {
+    "name": "Língua Espanhola",
+    "initials": "LE",
+    "teacherName": "Cristiane",
+    "teacherLastName": "Carvalho",
+    "color": "#4985C4",
+    "dir": "materia/linguaEspanhola.html",
+    "dirConteudox": "espanhol"
+  },
+  {
+    "name": "Arte",
+    "initials": "Arte",
+    "teacherName": "Rosane",
+    "teacherLastName": "Conti Bones",
+    "color": "#8584BD",
+    "dir": "materia/arte.html",
+    "dirConteudox": "arte"
+  },
+  {
+    "name": "Educação Física",
+    "initials": "EF",
+    "teacherName": "Eduardo",
+    "teacherLastName": "Machado",
+    "color": "#279AD0",
+    "dir": "materia/educacaoFisica.html",
+    "dirConteudox": "edfis"
   }
-  
-}
-
+]
