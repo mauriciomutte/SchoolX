@@ -1,55 +1,51 @@
-//ConteudoX
-function matterList(trimestre, materia) {
-  const list = document.querySelector('.' + materia +'-lista')
+function conteudoX(em) {
+  const main = document.querySelector('.conteudoX')
 
-  const divList = document.createElement('div')
-  divList.classList.add('lista__trimestre')
-  list.appendChild(divList)
-
-  const h2List = document.createElement('h2')
-  h2List.classList.add('lista__trimestre--title')
-  h2List.innerHTML = trimestre.title
-  divList.appendChild(h2List)
-
-  const trimestreLista = document.createElement('ul')
-  trimestreLista.classList.add('lista__trimestre__conteudo--ul')
-  divList.appendChild(trimestreLista)
-
-  trimestre.content.forEach(function(item) {
-    console.log(item)
-    const conteudo = document.createElement('li')
-    conteudo.classList.add('lista__trimestre__conteudo--li')
-    conteudo.innerHTML = item
-    trimestreLista.appendChild(conteudo)
-  })
-}
-
-function callJSON(m, materia, ano) {
-  const require = new XMLHttpRequest()
-  require.open("GET", '/schoolX/conteudo/' + ano + '.json', true)
+  const require = new XMLHttpRequest();
+  require.open('GET', '/conteudo/primeiro.json', true);
   require.onload = function() {
-    const matter = JSON.parse(this.responseText)
-    const test = [
-      matter.arte, 
-      matter.biologia, 
-      matter.edf,
-      matter.filosofia,
-      matter.fisica, 
-      matter.geografia, 
-      matter.historia, 
-      matter.espanhol,
-      matter.ingles, 
-      matter.portugues, 
-      matter.literatura, 
-      matter.matematica, 
-      matter.quimica, 
-      matter.redacao, 
-      matter.sociologia
-    ]
+    const conteudo = JSON.parse(this.responseText);
+    conteudo.forEach(function (element) {
+      const section = document.createElement('section');
+      section.id = element.name;
+      main.appendChild(section);
 
-    matterList(test[m].firstTri, materia)
-    matterList(test[m].secondTri, materia)
-    matterList(test[m].thirdTri, materia)
+      const titleDiv = document.createElement('div');
+      titleDiv.classList.add('materia__lista');
+      section.appendChild(titleDiv);
+
+      const titleImg = document.createElement('img');
+      titleImg.classList.add('materia__lista--img');
+      titleImg.src = '../../../assets/img/' + element.name + '_w.png';
+      titleDiv.appendChild(titleImg);
+
+      const title = document.createElement('h2');
+      title.classList.add('materia__lista--name');
+      title.innerHTML = element.name
+      titleDiv.appendChild(title);
+      
+      element.listContent.forEach(function (element, num) {
+        const trimestre = document.createElement('div');
+        trimestre.classList.add('lista__trimestre');
+        section.appendChild(trimestre);
+
+        const trimestreTitle = document.createElement('h3');
+        trimestreTitle.classList.add('lista__trimestre--title');
+        trimestreTitle.innerHTML = (num + 1) + 'º Trimestre';
+        trimestre.appendChild(trimestreTitle);
+
+        const ul = document.createElement('ul');
+        ul.classList.add('lista__trimestre__conteudo--ul');
+        trimestre.appendChild(ul);
+
+        element.forEach(function(element) {
+          const li = document.createElement('li');
+          li.classList.add('lista__trimestre__conteudo--li');
+          li.innerHTML = element;
+          ul.appendChild(li);
+        })
+      })
+    })
   }
-  require.send()
+  require.send();
 }
