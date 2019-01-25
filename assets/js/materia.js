@@ -75,11 +75,10 @@ function createMatterHeader(matter, matterNum) {
     matterContentBox.appendChild(matterContentUl)
 
     const require = new XMLHttpRequest()
-    require.open("GET", dirMatterContent, true)
+    require.open("GET", dirMatterContentSegundo, true)
     require.onload = function() {
       const conteudoxJSON = JSON.parse(this.responseText)
-      const conteudoxArray = [conteudoxJSON.arte, conteudoxJSON.biologia, conteudoxJSON.edf, conteudoxJSON.filosofia, conteudoxJSON.fisica, conteudoxJSON.geografia, conteudoxJSON.historia, conteudoxJSON.espanhol, conteudoxJSON.ingles, conteudoxJSON.portugues, conteudoxJSON.literatura, conteudoxJSON.matematica, conteudoxJSON.quimica, conteudoxJSON.redacao, conteudoxJSON.sociologia]
-      const conteudoxContent = conteudoxArray[matterNum].secondTri.content.reverse()
+      const conteudoxContent = conteudoxJSON[matterNum].listContent[2]
       conteudoxContent.forEach(function(item) {
         const matterContentLi = document.createElement('Li')
         matterContentLi.classList.add('matterContent__li')
