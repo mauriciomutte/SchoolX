@@ -1,8 +1,8 @@
-{
-  "fisica": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+[
+  {
+    "name":"Física",
+    "listContent": [
+      [
         "Grandezas físicas",
         "Relatividade do movimento",
         "Direção e sentido",
@@ -10,45 +10,36 @@
         "Movimento uniforme (MU)",
         "Movimento uniformemente variado (MUV)",
         "Lançamento vertical"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Operação com vetores",
         "Lançamento (Oblíquo, Horizontal e Circular)",
         "Força de atrito",
         "1ª Lei de Newton: Inércia",
         "2ª Lei de Newton: Dinâmica",
         "2ª Lei de Newton: Ação e Reação"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Plano inclinado",
         "Leis de Kepler",
         "Hidrostática",
         "Empuxo",
         "Estática"
       ]
-    }
+    ]
   },
-  "matematica": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Matemática",
+    "listContent": [
+      [
         "Operações com conjuntos",
         "Representação de conjuntos (reta real, notação de conjunto e notação de intervalo)",
         "Produto cartesiano",
         "Função",
         "Função através de conjuntos",
         "Domínio, imagem e contradomínio"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Raiz de uma função",
         "Função no plano cartesiano",
         "Tipos de função (função ímpar, par, crescente e decrescente)",
@@ -58,23 +49,20 @@
         "Sistema cartesiano ortogonal",
         "Função quadrática",
         "Estudo dos sinais da função quadrática"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Equação Exponencial",
         "Função Exponencial",
         "Logaritmo",
         "Progressão Aritmética",
         "Progressão Geométrica"
       ]
-    }
+    ]
   },
-  "quimica": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Química",
+    "listContent": [
+      [
         "Diferenças entre vapor e gás",
         "Fases da matéria",
         "Propriedades da matéria",
@@ -84,11 +72,8 @@
         "Estrutura da matéria",
         "Semelhanças atômicas",
         "Radioatividade"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Tabela periódica",
         "Distribuição eletrônica",
         "Ligações química",
@@ -97,22 +82,18 @@
         "Forças intermoleculares",
         "Funções inorgânicas",
         "Reações Químicas"
-        
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Balanceamento de reações químicas",
         "Cálculo estequiométrico",
         "Gases"
       ]
-    }
+    ]
   },
-  "biologia": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Biologia",
+    "listContent": [
+      [
         "Organização da biosfera",
         "Abiogênese e biogênese",
         "Panspermia cósmica e evolução química",
@@ -123,11 +104,8 @@
         "Ciclo do nitrogênio",
         "Ciclo da água",
         "Ciclo do carbono"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Dinâmica populacional",
         "Relações ecológicas",
         "Sucessão ecológia",
@@ -143,113 +121,86 @@
         "Vitaminas",
         "Ácidos nucleicos",
         "Dogma central da biologia"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Divisão celular",
         "Gametogênese",
         "Histologia"
       ]
-    }
+    ]
   },
-  "filosofia": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Filosofia",
+    "listContent": [
+      [
         "Nascimento da filosofia",
         "Pensamento apolíneo e dionisíaco",
         "Velocidade e aceleração",
         "Movimento e descrição dos movimentos",
         "Origem da cultura ocidental",
         "Moral de rebanho"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Consumo e lazer",
         "Trabalho e alienação"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Moral",
         "Ética"
       ]
-    }
+    ]
   },
-  "sociologia": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Sociologia",
+    "listContent": [
+      [
         "Nascimento da sociologia",
         "Émile Durkheim"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Democracia"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Antropologia cultural"
       ]
-    }
+    ]
   },
-  "geografia": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Geografia",
+    "listContent": [
+      [
         "Fuso horário",
         "Escala",
         "Hidrografia",
         "Relevo"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Clima",
         "Estações",
         "Biomas"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Urbanização",
         "Fonte de Energia"
       ]
-    }
+    ]
   },
-  "historia": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"História",
+    "listContent": [
+      [
         "Pré-história",
         "Mesopotâmia",
         "Egito"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Grécia",
         "Roma",
         "Bárbaros",
         "Feudalismo",
         "Islamismo"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Império Bizantino",
         "Formação dos Estados",
         "Renascimento",
@@ -258,20 +209,17 @@
         "Povos pré-colombianos",
         "Povos Africanos"
       ]
-    }
+    ]
   },
-  "portugues": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Português",
+    "listContent": [
+      [
         "Variações linguísticas",
         "Fonemas e dígrafos",
         "Regras de acentuação"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Significante e significado",
         "Polissemia",
         "Denotação e conotação",
@@ -279,154 +227,116 @@
         "Hiponímia e hiperonímia",
         "Funções de linguagem",
         "Interpretação de texto"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Estrutura de palavras",
         "Formação de palavras"
       ]
-    }
+    ]
   },
-  "literatura": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Literatura",
+    "listContent": [
+      [
         "Linguagem literária",
-        "Gêneros narrativos "       
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+        "Gêneros narrativos "
+      ],
+      [
         "Trovadorismo",
         "Humanismo",
-        "Classicismo"        
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+        "Classicismo" 
+      ],
+      [
         "Barroco",
         "Arcadismo"
       ]
-    }
+    ]
   },
-  "redacao": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Redação",
+    "listContent": [
+      [
         "Dissertação argumentativa"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Dissertação argumentativa"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Crônica"
       ]
-    }
+    ]
   },
-  "ingles": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Inglês",
+    "listContent": [
+      [
         "Simple present",
         "Present continuos",
         "Present perfect"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Simple past",
         "Past continuos",
         "Past perfect"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Simple future",
         "Future immediate"
       ]
-    }
+    ]
   },
-  "espanhol": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Espanhol",
+    "listContent": [
+      [
         "Haber e tener",
         "Verbo: gustar",
         "Artigos determinados e indeterminados",
         "Advérbios"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Pretérito indefinido",
         "Pretérito perfeito composto",
         "Conjunções"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Pretérito imperfeito",
         "Pluscuamperfecto do indicativo",
         "Pronombres del objeto indirecto"
       ]
-    }
+    ]
   },
-  "arte": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Artes",
+    "listContent": [
+      [
         "Arte urbana",
         "Arte e matéria",
         "Auto-retrato"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Body art",
         "Pop art"
-      ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
+      ],
+      [
         "Concretismo"
       ]
-    }
+    ]
   },
-  "edf": {
-    "firstTri": {
-      "title": "1º Trimestre",
-      "content": [
+  {
+    "name":"Educação Física",
+    "listContent": [
+      [
         "Futsal",
         "Exercício físico"
-      ]
-    },
-    "secondTri": {
-      "title": "2º Trimestre",
-      "content": [
+      ],
+      [
         "Basquete",
         "Handebol"
+      ],
+      [
+
       ]
-    },
-    "thirdTri": {
-      "title": "3º Trimestre",
-      "content": [
-      ]
-    }
+    ]
   }
-}
+]
