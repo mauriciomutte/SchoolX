@@ -14,7 +14,18 @@ gulp.task('sw', function(callback) {
   var rootDir = './';
 
   swPrecache.write(path.join(rootDir, 'sw.js'), {
-    staticFileGlobs: [rootDir + 'manifest.json', 'assets/js/*.js','assets/img/*.png', 'assets/img/*.jpg', 'assets/css/*.css', 'index.html', 'materia/*.html', 'agenda/*.html', 'conteudo/segundo/materia/*.html', '*.json'],
+    staticFileGlobs: [
+      rootDir + 'manifest.json', 
+      'assets/js/*.js',
+      'assets/img/*.png',
+      'assets/img/*.jpg',
+      'assets/css/*.css',
+      'index.html',
+      'conteudo/*.html',
+      'agenda/*.html',
+      'conteudo/segundo/materia/*.html',
+      '*.json'
+    ],
     stripPrefix: rootDir
   }, callback);
 });
@@ -26,7 +37,7 @@ gulp.task('serve', function () {
       baseDir: "./"
     }
   })
-  gulp.watch(['assets/css/style.css', 'assets/js/main.js'], ['sw'])
+  gulp.watch(['assets/css/style.css', 'assets/js/*.js'], ['sw'])
 })
 
 // CSS Task
