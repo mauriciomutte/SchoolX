@@ -58,7 +58,7 @@
     require.open("GET", dirMatter, true)
     require.onload = function() {
       const matterJSON = JSON.parse(this.responseText)
-      createMatterHeader(matterJSON.geografia, 5)
+      createMatterHeader(matterJSON.geografia, 6)
     }
     require.send()
   </script>

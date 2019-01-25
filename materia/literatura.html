@@ -58,7 +58,7 @@
     require.open("GET", dirMatter, true)
     require.onload = function() {
       const matterJSON = JSON.parse(this.responseText)
-      createMatterHeader(matterJSON.literatura, 10)
+      createMatterHeader(matterJSON.literatura, 9)
     }
     require.send()
   </script>
