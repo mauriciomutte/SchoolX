@@ -1,3 +1,39 @@
+function conteudoxIndex(em) {
+  const main = document.querySelector('.conteudoxIndex')
+
+  const require = new XMLHttpRequest();
+  require.open('GET', em, true);
+  require.onload = function() {
+    const conteudo = JSON.parse(this.responseText);
+    conteudo.forEach(function(element) {
+      const div = document.createElement('div');
+      div.classList.add('menu__materia');
+      main.appendChild(div);
+
+      const a = document.createElement('a');
+      a.classList.add('menu__materia--a');
+      a.href = 'content.html#' + element.name
+      div.appendChild(a);
+
+      const item = document.createElement('div');
+      item.classList.add('menu__materia__box');
+      a.appendChild(item);
+
+      const itemImg = document.createElement('img');
+      itemImg.classList.add('menu__materia__box--img');
+      itemImg.src = '/assets/img/' + element.name + '.png';
+      itemImg.alt = element.name + ' icon';
+      item.appendChild(itemImg);
+
+      const itemName = document.createElement('span');
+      itemName.classList.add('menu__materia__box--name');
+      itemName.innerHTML = element.name;
+      item.appendChild(itemName);
+    })
+  }
+  require.send();
+}
+
 function conteudoX(em) {
   const main = document.querySelector('.conteudoX')
 
