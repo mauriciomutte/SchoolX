@@ -2,7 +2,7 @@ function conteudoX(em) {
   const main = document.querySelector('.conteudoX')
 
   const require = new XMLHttpRequest();
-  require.open('GET', '/conteudo/primeiro.json', true);
+  require.open('GET', em, true);
   require.onload = function() {
     const conteudo = JSON.parse(this.responseText);
     conteudo.forEach(function (element) {
