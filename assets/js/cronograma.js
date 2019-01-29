@@ -9,12 +9,12 @@ function createScheduleTable() {
     const weekDays = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex']
     const table = document.querySelector('.schedule__table')
     const periods = [
-      [matterJSON.redacao, matterJSON.matematica, matterJSON.fisica, matterJSON.arte, matterJSON.historia],
-      [matterJSON.matematica, matterJSON.educacaoFisica, matterJSON.fisica, matterJSON.geografia, matterJSON.historia],
-      [matterJSON.matematica, matterJSON.filosofia, matterJSON.biologia, matterJSON.geografia, matterJSON.matematica],
-      [matterJSON.linguaEspanhola, matterJSON.biologia, matterJSON.linguaPortuguesa, matterJSON.arte, matterJSON.linguaInglesa],
-      [matterJSON.educacaoFisica, matterJSON.biologia, matterJSON.linguaPortuguesa, matterJSON.quimica, matterJSON.fisica],
-      [matterJSON.quimica, matterJSON.sociologia, matterJSON.literatura, matterJSON.quimica, matterJSON.linguaInglesa]
+      [matterJSON[10], matterJSON[1], matterJSON[0], matterJSON[13], matterJSON[7]],
+      [matterJSON[1], matterJSON[14], matterJSON[0], matterJSON[6], matterJSON[7]],
+      [matterJSON[1], matterJSON[4], matterJSON[3], matterJSON[6], matterJSON[1]],
+      [matterJSON[12], matterJSON[3], matterJSON[8], matterJSON[13], matterJSON[11]],
+      [matterJSON[14], matterJSON[3], matterJSON[8], matterJSON[2], matterJSON[0]],
+      [matterJSON[2], matterJSON[5], matterJSON[9], matterJSON[2], matterJSON[11]]
     ]
   
     function createTh() {
