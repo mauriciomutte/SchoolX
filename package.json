@@ -4,7 +4,6 @@
   "description": "[View website](https://mauriciomutte.github.io/SchoolX)",
   "main": "gulpfile.js",
   "dependencies": {
-    "npm": "^5.10.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
