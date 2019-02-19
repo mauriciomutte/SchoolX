@@ -21,23 +21,6 @@ function createTestTable() {
     require.open("GET", dirMatter, true)
     require.onload = function() {
       const matter = JSON.parse(this.responseText)
-      const test = [
-        matter.arte, 
-        matter.biologia, 
-        matter.educacaoFisica,
-        matter.filosofia,
-        matter.fisica, 
-        matter.geografia, 
-        matter.historia, 
-        matter.linguaEspanhola,
-        matter.linguaInglesa, 
-        matter.linguaPortuguesa, 
-        matter.literatura, 
-        matter.matematica, 
-        matter.quimica, 
-        matter.redacao, 
-        matter.sociologia
-      ]
 
       tests.forEach(function(item) {
         const dateNow = new Date()
@@ -53,7 +36,7 @@ function createTestTable() {
   
           const testContent = document.createElement('div')
           testContent.classList.add('test__content')
-          testContent.style.backgroundColor = test[item.matter].color
+          testContent.style.backgroundColor = matter[item.matter].color
           testPage.appendChild(testContent)
         
           const testDate = document.createElement('div')
@@ -76,8 +59,8 @@ function createTestTable() {
         
           const testMatterName = document.createElement('a')
           testMatterName.classList.add('test__matterName')
-          testMatterName.innerHTML = test[item.matter].name
-          testMatterName.href = '../' + test[item.matter].dir
+          testMatterName.innerHTML = matter[item.matter].name
+          testMatterName.href = '../' + matter[item.matter].dir
           testInfo.appendChild(testMatterName)
         
           const testMatterTest = document.createElement('p')
